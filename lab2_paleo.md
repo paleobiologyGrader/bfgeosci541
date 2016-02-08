@@ -1,54 +1,59 @@
 #Lab Exercise 2
 
 ##Part 1 questions
-1. <p>Following are my initial and final classifications. Without looking at the data I did the initial classification based solely on what I thought was relavent (visually) to distinguish among species. My specific reasoning is explained for each species with the 'Distinguishing characteristics' tag. For the final classifications the choice of relative stratigraphic position cutoffs was arbitrary, and was in no way influenced by a logical system. Herein lies the flaw of this classification, because even if there is quantifiable data to work with and subset, the parameter selections are prone to human error/bias. The result was that, with quantitative data to work with, my classifications necessarily became more broad to account for the new (as opposed to the initial classification) data.</p>
+<ol>
+<li><p>Following are my initial and final classifications. Without looking at the data I did the initial classification based solely on what I thought was relavent (visually) to distinguish among species. My specific reasoning is explained for each species with the 'Distinguishing characteristics' tag. For the final classifications the choice of relative stratigraphic position cutoffs was arbitrary, and was in no way influenced by a logical system. Herein lies the flaw of this classification, because even if there is quantifiable data to work with and subset, the parameter selections are prone to human error/bias. The result was that, with quantitative data to work with, my classifications necessarily became more broad to account for the new (as opposed to the initial classification) data.</p>
 
-###Initial classifications (visual traits only)
-	Species 1
-	Distinguishing characteristics: deep shell pattern, more repetetitions and shallower than species 3
-	1,2,4,8,20
+<h3>Initial classifications (visual traits only)</h3>
+<ul>	
+	<li>Species 1<br />
+	Distinguishing characteristics: deep shell pattern, more repetetitions and shallower than species 3<br />
+	1,2,4,8,20</li>
 
-	Species 2
-	Distinguishing characteristics: mostly smooth shell with hints of shallow striations
-	3,9,10,13,15,24,25
+	<li>Species 2<br />
+	Distinguishing characteristics: mostly smooth shell with hints of shallow striations<br />
+	3,9,10,13,15,24,25</li>
 
-	Species 3
-	Distinguishing characteristics: smooth, deep pattern visible in side view
-	6,12,18,21
+	<li>Species 3<br />
+	Distinguishing characteristics: smooth, deep pattern visible in side view<br />
+	6,12,18,21</li>
 
-	Species 4
-	Distinguishing characteristics: U/D looks (visually) to be quite low
-	5,14,17,19,23
+	<li>Species 4<br />
+	Distinguishing characteristics: U/D looks (visually) to be quite low<br />
+	5,14,17,19,23</li>
 
-	Species 5
-	Distinguishing characteristics: wavy pattern present in shell
-	7,11,16,22
-
-###Secondary classifications (visual and quantitative traits)
-	Species 1
+	<li>Species 5<br />
+	Distinguishing characteristics: wavy pattern present in shell<br />
+	7,11,16,22</li>
+</ul>
+<h3>Secondary classifications (visual and quantitative traits)</h3>
+<ul>
+	<li>Species 1<br />
 	Distinguishing characteristics: intermediate -> deep ribbing regardless of size, relative stratigraphic 
-	position is greater than 8
-	1,4,8,11,20,21
+	position is greater than 8<br />
+	1,4,8,11,20,21</li>
 
-	Species 2
+	<li>Species 2<br />
 	Distinguishing characteristics: deep ribbing in small specimens, smoother in the larger ones (could 
 	represent ontogenetic growth due to various stages of ribbing), relative stratigraphic position between 
-	9.1 and 6.8
-	2,6,7,9,10,17,25
+	9.1 and 6.8<br />
+	2,6,7,9,10,17,25</li>
 
-	Species 3
+	<li>Species 3<br />
 	Distinguishing characteristics: sexual dimorphism present, both smooth and ribbed specimens, UD within 
-	.05 of .4, relative stratigraphic position between 5.1 and 3.7
-	3,12,15,18,22,24
+	.05 of .4, relative stratigraphic position between 5.1 and 3.7<br />
+	3,12,15,18,22,24</li>
 
-	Species 4
+	<li>Species 4<br />
 	Distinguishing characteristics: relative stratigraphic position less than 4.7, deviation from mean of 
-	ratio for umbilical to width is on average negative
-	5,13,14,16,19,23
-
-2. <p>Morphologically I found the patterns present to be both relavent and misleading at the same time. On one hand they may represent differences in phylogeny and therefore lead to the assumption of two different species being present. On the other hand, however, the two different forms could represent two different sexes or two different points in ontogeny of the same species. </p>
-3. <p>The ontogenetic change that I hypothesized in species 2 showed deeper ribs in smaller specimens and flattened out through the lifetime.</p>
-4. <p>Evaluating possible sexual dimorphism was somewhat difficult, because while the fossil record is good for many things, sexing ammonites is not among its specialties. I do not have the wherewithal to determine possible sexual dimorphism, but that does not disprove its presence in this small sample.</p>
+	ratio for umbilical to width is on average negative<br />
+	5,13,14,16,19,23</li>
+</ul>
+</li>
+<li><p>Morphologically I found the patterns present to be both relavent and misleading at the same time. On one hand they may represent differences in phylogeny and therefore lead to the assumption of two different species being present. On the other hand, however, the two different forms could represent two different sexes or two different points in ontogeny of the same species. </p></li>
+<li><p>The ontogenetic change that I hypothesized in species 2 showed deeper ribs in smaller specimens and flattened out through the lifetime.</p></li>
+<li><p>Evaluating possible sexual dimorphism was somewhat difficult, because while the fossil record is good for many things, sexing ammonites is not among its specialties. I do not have the wherewithal to determine possible sexual dimorphism, but that does not disprove its presence in this small sample.</p></li>
+</ol>
 
 ##Part 2 questions
 ###Section 1
