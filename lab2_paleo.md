@@ -1,7 +1,7 @@
-Part 1 questions
+##Part 1 questions
 1. Following are my initial and final classifications. Without looking at the data I did the initial classification based solely on what I thought was relavent (visually) to distinguish among species. My specific reasoning is explained for each species with the 'Distinguishing characteristics' tag. For the final classifications the choice of relative stratigraphic position cutoffs was arbitrary, and was in no way influenced by a logical system. Herein lies the flaw of this classification, because even if there is quantifiable data to work with and subset, the parameter selections are prone to human error/bias. The result was that, with quantitative data to work with, my classifications necessarily became more broad to account for the new (as opposed to the initial classification) data.
 
-Initial classifications (visual traits only)
+###Initial classifications (visual traits only)
 	Species 1
 	Distinguishing characteristics: deep shell pattern, more repetetitions and shallower than species 3
 	1,2,4,8,20
@@ -22,7 +22,7 @@ Initial classifications (visual traits only)
 	Distinguishing characteristics: wavy pattern present in shell
 	7,11,16,22
 
-Secondary classifications (visual and quantitative traits)
+###Secondary classifications (visual and quantitative traits)
 	Species 1
 	Distinguishing characteristics: intermediate -> deep ribbing regardless of size, relative stratigraphic position is greater than 8
 	1,4,8,11,20,21
@@ -41,19 +41,20 @@ Secondary classifications (visual and quantitative traits)
 
 2. Morphologically I found the patterns present to be both relavent and misleading at the same time. On one hand they may represent differences in phylogeny and therefore lead to the assumption of two different species being present. On the other hand, however, the two different forms could represent two different sexes or two different points in ontogeny of the same species. 
 
-Part 2 questions
-Section 1
+##Part 2 questions
+###Section 1
 1. land, links, species, site, and outline
 2. land is an array, links and outline are matrices, species and site are factors
 3. 12x2x40
 
-Section 2
+###Section 2
 1. land
 2. ProcrustesHummingbirds <- gpagen(hummingbirds[["land"]])
 3. plotTangentSpace(ProcrustesHummingbirds[["coords"]], warpgrids=FALSE, verbose=FALSE)
 4. Qualitatively looking at the resulting PCA graph, there is no singular species of hummingbird. When changing ProcD to FALSE in the gpagen function, which slides the semilandmarks based on minimizing bending energy (removes artifacts due to equidistant semilandmark analysis; considered to be more accurate), two distinct groupings form. One has a majority of the points, while the other contains only three of the points. 
 
-Part 3 questions
+##Part 3 questions
+###Section 1
 1. Fangs longer than 6 inches is the synapomorphy of the clade containing D and E.
 2. Sulfurous odor would be a plesiomorphic character of that clade.
 3. Adorable eyelashes is the synapomorphy for the clade containing A and B.
@@ -61,11 +62,11 @@ Part 3 questions
 5. Laser death rays distinguish E from D. E is probably going to win in the long run when looking at niche conservatism above the species level. 
 6. Adorable eyelashes, being present in A and B's most recent common ancestor, is a synapomorphy. 
 7. Family 1 is monophyletic, family 2 is polyphyletic, and family 3 is monophyletic.
-
+###Section 2
 1. As to whether it is advisable I am not certain, but it would make more sense to be grouped with B and C than with D and E. Although this would be paraphyletic by excluding D and E, it would be more appropriate than grouping A with only D and E.
 2. Group 1 is paraphyletic, group 2 is monophyletic, group 3 is paraphyletic, group 4 is monophyletic, and group 5 is polyphyletic. 
 
-Part 4 questions
+##Part 4 questions
 1. Paedomorphosis, retention of juvenile characteristics.
 2. Gryphaea gigantea
 3. Because Olenellus armatus most closely resembles the juvenile form of Olenellus lapworthi, paedomorphosis is present in the Olenellus example. 
