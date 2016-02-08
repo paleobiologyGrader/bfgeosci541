@@ -1,5 +1,5 @@
 ##Part 1 questions
-1. Following are my initial and final classifications. Without looking at the data I did the initial classification based solely on what I thought was relavent (visually) to distinguish among species. My specific reasoning is explained for each species with the 'Distinguishing characteristics' tag. For the final classifications the choice of relative stratigraphic position cutoffs was arbitrary, and was in no way influenced by a logical system. Herein lies the flaw of this classification, because even if there is quantifiable data to work with and subset, the parameter selections are prone to human error/bias. The result was that, with quantitative data to work with, my classifications necessarily became more broad to account for the new (as opposed to the initial classification) data.
+<p>1. Following are my initial and final classifications. Without looking at the data I did the initial classification based solely on what I thought was relavent (visually) to distinguish among species. My specific reasoning is explained for each species with the 'Distinguishing characteristics' tag. For the final classifications the choice of relative stratigraphic position cutoffs was arbitrary, and was in no way influenced by a logical system. Herein lies the flaw of this classification, because even if there is quantifiable data to work with and subset, the parameter selections are prone to human error/bias. The result was that, with quantitative data to work with, my classifications necessarily became more broad to account for the new (as opposed to the initial classification) data.</p>
 
 ###Initial classifications (visual traits only)
 	Species 1
@@ -39,7 +39,9 @@
 	Distinguishing characteristics: relative stratigraphic position less than 4.7, deviation from mean of ratio for umbilical to width is on average negative
 	5,13,14,16,19,23
 
-2. Morphologically I found the patterns present to be both relavent and misleading at the same time. On one hand they may represent differences in phylogeny and therefore lead to the assumption of two different species being present. On the other hand, however, the two different forms could represent two different sexes or two different points in ontogeny of the same species. 
+<p>2. Morphologically I found the patterns present to be both relavent and misleading at the same time. On one hand they may represent differences in phylogeny and therefore lead to the assumption of two different species being present. On the other hand, however, the two different forms could represent two different sexes or two different points in ontogeny of the same species. </p>
+<p>3. The ontogenetic change that I hypothesized in species 2 showed deeper ribs in smaller specimens and flattened out through the lifetime.</p>
+<p>4. Evaluating possible sexual dimorphism was somewhat difficult, because while the fossil record is good for many things, sexing ammonites is not among its specialties. I do not have the wherewithal to determine possible sexual dimorphism, but that does not disprove its presence in this small sample.</p>
 
 ##Part 2 questions
 ###Section 1
