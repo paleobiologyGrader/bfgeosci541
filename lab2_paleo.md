@@ -50,9 +50,9 @@
 	5,13,14,16,19,23</li>
 </ul>
 </li>
-<li><p>Morphologically I found the patterns present to be both relavent and misleading at the same time. On one hand they may represent differences in phylogeny and therefore lead to the assumption of two different species being present. On the other hand, however, the two different forms could represent two different sexes or two different points in ontogeny of the same species. </p></li>
-<li><p>The ontogenetic change that I hypothesized in species 2 showed deeper ribs in smaller specimens and flattened out through the lifetime.</p></li>
-<li><p>Evaluating possible sexual dimorphism was somewhat difficult, because while the fossil record is good for many things, sexing ammonites is not among its specialties. I do not have the wherewithal to determine possible sexual dimorphism, but that does not disprove its presence in this small sample.</p></li>
+<li>Morphologically I found the patterns present to be both relavent and misleading at the same time. On one hand they may represent differences in phylogeny and therefore lead to the assumption of two different species being present. On the other hand, however, the two different forms could represent two different sexes or two different points in ontogeny of the same species.</li>
+<li>The ontogenetic change that I hypothesized in species 2 showed deeper ribs in smaller specimens and flattened out through the lifetime.</li>
+<li>Evaluating possible sexual dimorphism was somewhat difficult, because while the fossil record is good for many things, sexing ammonites is not among its specialties. I do not have the wherewithal to determine possible sexual dimorphism, but that does not disprove its presence in this small sample.</li>
 </ol>
 
 ##Part 2 questions
@@ -65,7 +65,7 @@
 1. land
 2. ProcrustesHummingbirds <- gpagen(hummingbirds[["land"]])
 3. plotTangentSpace(ProcrustesHummingbirds[["coords"]], warpgrids=FALSE, verbose=FALSE)
-4. <p>Qualitatively looking at the resulting PCA graph, there is no singular species of hummingbird. When changing ProcD to FALSE in the gpagen function, which slides the semilandmarks based on minimizing bending energy (removes artifacts due to equidistant semilandmark analysis; considered to be more accurate), two distinct groupings form. One has a majority of the points, while the other contains only three of the points.</p> 
+4. Qualitatively looking at the resulting PCA graph, there is no singular species of hummingbird. When changing ProcD to FALSE in the gpagen function, which slides the semilandmarks based on minimizing bending energy (removes artifacts due to equidistant semilandmark analysis; considered to be more accurate), two distinct groupings form. One has a majority of the points, while the other contains only three of the points.
 
 ##Part 3 questions
 ###Section 1
@@ -73,14 +73,14 @@
 2. Sulfurous odor would be a plesiomorphic character of that clade.
 3. Adorable eyelashes is the synapomorphy for the clade containing A and B.
 4. C, D, and E all have sulfurous odor. 
-5. <p>Laser death rays distinguish E from D. E is probably going to win in the long run when looking at niche conservatism above the species level.</p> 
+5. Laser death rays distinguish E from D. E is probably going to win in the long run when looking at niche conservatism above the species level. 
 6. Adorable eyelashes, being present in A and B's most recent common ancestor, is a synapomorphy. 
 7. Family 1 is monophyletic, family 2 is polyphyletic, and family 3 is monophyletic.
 ###Section 2
-1. <p>As to whether it is advisable I am not certain, but it would make more sense to be grouped with B and C than with D and E. Although this would be paraphyletic by excluding D and E, it would be more appropriate than grouping A with only D and E.</p>
+1. As to whether it is advisable I am not certain, but it would make more sense to be grouped with B and C than with D and E. Although this would be paraphyletic by excluding D and E, it would be more appropriate than grouping A with only D and E.
 2. Group 1 is paraphyletic, group 2 is monophyletic, group 3 is paraphyletic, group 4 is monophyletic, and group 5 is polyphyletic. 
 
 ##Part 4 questions
 1. Paedomorphosis, retention of juvenile characteristics.
 2. Gryphaea gigantea
-3. <p>Because Olenellus armatus most closely resembles the juvenile form of Olenellus lapworthi, paedomorphosis is present in the Olenellus example.</p>
+3. Because Olenellus armatus most closely resembles the juvenile form of Olenellus lapworthi, paedomorphosis is present in the Olenellus example.
