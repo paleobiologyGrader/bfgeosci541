@@ -1,8 +1,8 @@
 Bryce Fenlon
-Niche conservatism above the species level
+##Niche conservatism above the species level
 By Elizabeth A. Hadly, Paula A. Spaeth, and Cheng Li (September 2009)
 
-##Summary
+###Summary
 Extending previous studies of niche conservatism at the species level through utilization of geographic range data, the 
 researchers looked at data surrounding the dramatic climate change due to warming in the late Pleistocene. When comparing 
 niche conservatism at the species level to conservatism at the generic and family levels three things became obvious. The 
@@ -25,7 +25,7 @@ towards higher-level ecological niches. Although it was not explicitly tested in
 sense that niche conservatism at the species level is affected more by immediate environmental-based controls (biotic/
 abiotic interactions) than the aforementioned trait-based ones.
 
-##Things you liked
+###Things you liked
 Considering my field of choice in conservation biology, I found this article to be extremely interesting. Most importantly 
 to me was the caveat presented by the authors in the discussion of the results. Although the ecological niches that were 
 studied were conserved for more than a hundred millenia, many of them over the past hundred years have started to 
@@ -38,7 +38,7 @@ genus level modeling of niche conservatism would be more informative than specie
 when looking at the significance of climate change in mammal distribution to be quite interesting and something to be 
 explored more closely. 
 
-##Things you did not like
+###Things you did not like
 Although any paper has to have a specific line of investigation to share a manageable amount of information with the reader, 
 this one could have expounded on one thing. The authors mentioned at the outset that their study included only mammals. The 
 reasoning for not including other animals and plants was that those groups are not monophyletic. While this rationale 
@@ -46,7 +46,7 @@ limited the scope of the paper to mammals, the reason as to why monophyly is an 
 upon. If similar adaptations (trait-based) are important for determining niche-conservatism at the genus level, would this 
 type of analysis not apply to para/polyphyletic genera that contain species with similar adaptations?
 
-##Evaluation of figures
+###Evaluation of figures
 The figures in this article consisted mainly of before and after snapshots of both species level niche-spaces and genus level 
 niche-spaces (for canis). Also included was a correlation of LP and LH range sizes, as well as a graphic, sorted by LP rank, 
 depicting relative change in geographic range size for all included genera. All graphs and figures clearly distinguished 
