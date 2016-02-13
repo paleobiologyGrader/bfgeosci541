@@ -1,5 +1,7 @@
 #Lab Exercise 2
 
+> The html actually made it a bit difficult to grade, maybe just stick to native GitHub flavoured markdown. Good lab though, 18.3/20.
+
 ##Part 1 questions
 <ol>
 <li><p>Following are my initial and final classifications. Without looking at the data I did the initial classification based solely on what I thought was relavent (visually) to distinguish among species. My specific reasoning is explained for each species with the 'Distinguishing characteristics' tag. For the final classifications the choice of relative stratigraphic position cutoffs was arbitrary, and was in no way influenced by a logical system. Herein lies the flaw of this classification, because even if there is quantifiable data to work with and subset, the parameter selections are prone to human error/bias. The result was that, with quantitative data to work with, my classifications necessarily became more broad to account for the new (as opposed to the initial classification) data.</p>
@@ -48,12 +50,19 @@
 	Distinguishing characteristics: relative stratigraphic position less than 4.7, deviation from mean of 
 	ratio for umbilical to width is on average negative<br />
 	5,13,14,16,19,23</li>
+
 </ul>
+
 </li>
-<li>Morphologically I found the patterns present to be both relavent and misleading at the same time. On one hand they may represent differences in phylogeny and therefore lead to the assumption of two different species being present. On the other hand, however, the two different forms could represent two different sexes or two different points in ontogeny of the same species.</li>
-<li>The ontogenetic change that I hypothesized in species 2 showed deeper ribs in smaller specimens and flattened out through the lifetime.</li>
-<li>Evaluating possible sexual dimorphism was somewhat difficult, because while the fossil record is good for many things, sexing ammonites is not among its specialties. I do not have the wherewithal to determine possible sexual dimorphism, but that does not disprove its presence in this small sample.</li>
+
+<p><li>Morphologically I found the patterns present to be both relavent and misleading at the same time. On one hand they may represent differences in phylogeny and therefore lead to the assumption of two different species being present. On the other hand, however, the two different forms could represent two different sexes or two different points in ontogeny of the same species.</li></p>
+
+<p><li>The ontogenetic change that I hypothesized in species 2 showed deeper ribs in smaller specimens and flattened out through the lifetime.</li></p>
+
+<p><li>Evaluating possible sexual dimorphism was somewhat difficult, because while the fossil record is good for many things, sexing ammonites is not among its specialties. I do not have the wherewithal to determine possible sexual dimorphism, but that does not disprove its presence in this small sample.</li></p>
 </ol>
+
+> -2 points. Females tend to be larger than males, it was in the supplementary readings. Similarly, the chambers tend to be more widely spaced in juveniles than adults.
 
 ##Part 2 questions
 ###Section 1
