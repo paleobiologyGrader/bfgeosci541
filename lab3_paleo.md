@@ -28,7 +28,7 @@
 1. https://paleobiodb.org/data1.2/occs/list.json?base_name=Ambonychia&strat=Lexington Limestone
 2. https://paleobiodb.org/data1.2/occs/list.csv?base_name=Mammalia&interval=Paleocene,Oligocene
 3. https://paleobiodb.org/data1.2/taxa/opinions.csv?base_name=Testudines&interval=Mesozoic&op_type=all
-4. https://paleobiodb.org/data1.2/colls/list.csv?base_name=Aves, Marsupialia, Sirenia&cc=US
+4. https://paleobiodb.org/data1.2/colls/list.csv?base_name=Aves,Marsupialia,Sirenia&cc=US
 5. https://paleobiodb.org/data1.2/occs/list.csv?base_name=Ficus&taxon_reso=genus&show=refattr
 
 ###Exercise four questions
@@ -49,7 +49,7 @@
 
 
 
-
+###Sixth question
 API function
 
 downloadPBDB <- function(taxon,interval) {
