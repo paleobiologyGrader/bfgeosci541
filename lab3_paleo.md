@@ -53,8 +53,12 @@
 API function
 
 > downloadPBDB <- function(taxon,interval) {
+
 >	URL <- paste("https://paleobiodb.org/data1.2/occs/list.csv?base_name=",taxon,"&interval=",interval,sep="")
+
 >	tempPBDB <- read.csv(URL)
+
 >	return(tempPBDB)
+
 >	}
 
