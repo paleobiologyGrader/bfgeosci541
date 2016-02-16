@@ -1,8 +1,10 @@
 Bryce Fenlon
-##Niche conservatism above the species level
+## Niche conservatism above the species level
 By Elizabeth A. Hadly, Paula A. Spaeth, and Cheng Li (September 2009)
 
-###Summary
+> I enjoyed it. 10/10
+
+### Summary
 Extending previous studies of niche conservatism at the species level through utilization of geographic range data, the 
 researchers looked at data surrounding the dramatic climate change due to warming in the late Pleistocene. When comparing 
 niche conservatism at the species level to conservatism at the generic and family levels three things became obvious. The 
@@ -37,6 +39,8 @@ future climate change impacts on niche-spaces will continue to decline. More bro
 genus level modeling of niche conservatism would be more informative than species level ecological niche-space modeling 
 when looking at the significance of climate change in mammal distribution to be quite interesting and something to be 
 explored more closely. 
+
+> I agree, it is a very intriguing idea that our conservation efforts might best be concerntrated at higher taxonomic levels.
 
 ###Things you did not like
 Although any paper has to have a specific line of investigation to share a manageable amount of information with the reader, 
