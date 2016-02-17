@@ -229,7 +229,7 @@ Or
 3.	RandomNormal <- rnorm(70, mean=34.89, sd=13.70665)
 
 
-4.	The actual function in answer to this problem is the second one, but I created the first to use within the second.
+4.	The actual function in answer to this problem is the second one (distcompavg), but I created the first to use within the second.
 
 > compareDists <- function(x,y,iterations) {
 
