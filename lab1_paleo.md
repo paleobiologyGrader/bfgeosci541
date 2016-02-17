@@ -254,7 +254,9 @@ Or
 > return(abs(ReplicatedMeans))
 
 > }
-<br />
+
+
+
 > distcompavg <- function(iterations) {
 
 > d1 <- array(data=NA,dim=iterations)
