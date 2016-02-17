@@ -14,7 +14,7 @@
  
  > is2(precip)
  
- > [1] “TRUE”     “TRUE”     “FALSE”```
+ > [1] “TRUE”     “TRUE”     “FALSE”
 
 The function of the first two elements is to determine through logic whether precip is a vector, and if so, is it an atomic vector and not a list? Another way to go about that might be to use is.recursive(x) to directly query if it is a list. The third element double checks that precip is not, in fact, a one dimensional array.
 3.	as.matrix(trees)
