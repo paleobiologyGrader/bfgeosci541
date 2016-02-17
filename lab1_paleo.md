@@ -230,7 +230,8 @@ Or
 
 
 4.	The actual function in answer to this problem is the second one, but I created the first to use within the second.
-> function(x,y,iterations) {
+
+> compareDists <- function(x,y,iterations) {
 
 > Barrel<-c(x,y)
 
