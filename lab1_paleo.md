@@ -5,15 +5,10 @@
 2.	precip is a 70 element vector with only $names as an attribute, to figure this out I initially tried using is.vector(precip) and str(precip), but then realized that it returns TRUE for list(). I then created a primitive function to test three things. 
 
 > is2 <- function(x)
-
 > {
-
 > c(is.vector(x), is.atomic(x), is.array(x))
-
 > }
-
 > is2(precip)
-
 > [1] “TRUE”     “TRUE”     “FALSE” 
 
 The function of the first two elements is to determine through logic whether precip is a vector, and if so, is it an atomic vector and not a list? Another way to go about that might be to use is.recursive(x) to directly query if it is a list. The third element double checks that precip is not, in fact, a one dimensional array.
