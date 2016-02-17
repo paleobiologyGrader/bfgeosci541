@@ -271,4 +271,4 @@ Or
 
 > }
 
-5.	The density distribution for the precip data is not abnormal, but it is skewed toward larger and smaller values, with a local density minimum around 25 inches. The distribution I created assumes a shape closer to that of the classic bell curve.
+5.	The density distribution for the precip data is not abnormal, but it is skewed toward larger and smaller values, with a local density minimum around 25 inches. The distribution I created assumes a shape closer to that of the classic bell curve. Thus the test I ran was not a good measure of similarity between the two data sets. 
