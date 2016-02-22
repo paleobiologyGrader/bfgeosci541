@@ -36,10 +36,10 @@
   
 2. 1.0-0.8279221=0.1720779
 
-3. 
+3.
   > vegdist(PresencePBDB[c("Pleistocene","Miocene"),], method="jaccard")
 
-4. 
+4.
   > vegdist(PresencePBDB[c("Pleistocene","Pliocene","Miocene","Oligocene","Eocene",
 
   > "Paleocene"),], method="jaccard")
