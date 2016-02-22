@@ -70,9 +70,17 @@
   > Ordovician <- cullMatrix(PresencePBDB,minOccurrences=2,minDiversity=25)
   
 
-4. I plotted the paleo longitudinal coordinates against the geoplate positions and saw a 
+4. I plotted the DCA1 vs. average longitudinal coordinates for each geoplate and achieved a correlation of 0.01076781. By doing the same thing but with the DCA2 axis I achieved a correlation coefficient of -0.3574918. Following from this it would be reasonable to assume two things. First, the DCA2 is more closely related to the average geoplate longitudes in the Ordovician dataset. Secondly, because of the low correlation of the points, it can be concluded that no clear relationship exists between the distribution of geoplates and the DCA axes. 
+  > ordolng <- scores(OrdoDCA, display="sites")
+  
+  > longitudes <- tapply(Ordovician[,"paleolng"],Ordovician[,"geoplate"],mean)
 
-  > plot(tapply(Ordovician[,"paleolng"],Ordovician[,"geoplate"],mean))
+  > combinedlng <- merge(ordolng,longitudes,by="row.names")
+  
+  > cor(combinedlng[,"DCA1"],combinedlng[,"y"])
+  
+  > cor(combinedlng[,"DCA2"],combinedlng[,"y"])
+  
 
 
 
