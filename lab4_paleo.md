@@ -13,7 +13,7 @@
 4. We can infer from 3 that *Mytilus* was present in the Mississippian, Middle Devonian, Late Devonian, Guadalupian, and Lopingian epochs.
 
 ##Section two
-1. 
+1. jacsim(PresencePBDB) = 0.8279221
   > library(dplyr)
 
   > jacsim <- function(x) {
@@ -34,5 +34,16 @@
   
   > }
   
+2. 1.0-0.8279221=0.1720779
+
+3. 
+  > vegdist(PresencePBDB[c("Pleistocene","Miocene"),], method="jaccard")
+
+4. 
+  > vegdist(PresencePBDB[c("Pleistocene","Pliocene","Miocene","Oligocene","Eocene",
+
+  > "Paleocene"),], method="jaccard")
+  
+##Section three
   
   
