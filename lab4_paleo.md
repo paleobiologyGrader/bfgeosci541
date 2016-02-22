@@ -47,10 +47,10 @@
 ##Section three
 
 ##Section four
-1. 
+1.
   > Ordovician <- downloadPBDB(Taxa="animalia",StartInterval="Ordovician",StopInterval="")
 
-2. 
+2.
   > Ordovician <- cleanGenus(Ordovician)
 
 3.
