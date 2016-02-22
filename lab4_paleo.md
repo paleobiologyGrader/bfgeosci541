@@ -52,10 +52,11 @@
 
 2.
   > vegdist(RandomEpochs, method="jaccard")
+  
 3. Middle Jurassic, Late Jurassic, Early Cretaceous, Paleocene, Oligocene, Pliocene
 
 4. Although no singular variable determines the boundaries of epochs in geologic time, temperature seems to be the driving force behind much of the similarities/differences between them. Geographic distance due to the breakup of Gondwana in the Cretaceous may have accelerated temperature change by altering ocean currents.
-
+ 
 5. The defining boundary between the Cretaceous and Paleocene is the K-Pg mass extinction event. In the Early Cretaceous, ecological niches were filled with quite a different variety of creatures than in the Paleocene, simply due to adaptive radiation and speciation after the non-avian dinosaurs lost their battle with entropy.
 
 ##Section four
