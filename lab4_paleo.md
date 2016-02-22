@@ -14,6 +14,7 @@
 
 ##Section two
 1. jacsim(PresencePBDB) = 0.8279221
+  
   > library(dplyr)
 
   > jacsim <- function(x) {
@@ -34,6 +35,7 @@
   
   > }
   
+  
 2. 1.0-0.8279221=0.1720779
 
 3.
@@ -50,6 +52,7 @@
 
 2.
   > vegdist(RandomEpochs, method="jaccard")
+  
 
 3. Middle Jurassic, Late Jurassic, Early Cretaceous, Paleocene, Oligocene, Pliocene
 
@@ -66,6 +69,7 @@
 
 3.
   > Ordovician <- cullMatrix(PresencePBDB,minOccurrences=2,minDiversity=25)
+  
 
 4. I looked at the summaries of samples drawn (without replacement) from both the "paleolat" and "paleolng" categories in the Ordovician data set. Because the latitude distribution is constrained more due to latitudinal tolerances of organisms, it would seem to make sense that the DCA2 axis would relate to the latitude, and the DCA1 axis with its relatively random distribution density would relate to longitude in the downloaded data.
   > distlng <- sample(Ordovician[,"paleolng"],replace=FALSE)
