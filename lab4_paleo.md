@@ -70,15 +70,10 @@
   > Ordovician <- cullMatrix(PresencePBDB,minOccurrences=2,minDiversity=25)
   
 
-4. I looked at the summaries of samples drawn (without replacement) from both the "paleolat" and "paleolng" categories in the Ordovician data set. Because the latitude distribution is constrained more due to latitudinal tolerances of organisms, it would seem to make sense that the DCA2 axis would relate to the latitude, and the DCA1 axis with its relatively random distribution density would relate to longitude in the downloaded data.
+4. I plotted the paleo longitudinal coordinates against the geoplate positions and saw a 
 
-  > distlng <- sample(Ordovician[,"paleolng"],replace=FALSE)
-  
-  > distlat <- sample(Ordovician[,"paleolat"],replace=FALSE)
+  > plot(tapply(Ordovician[,"paleolng"],Ordovician[,"geoplate"],mean))
 
-  > summary(distlng)
-  
-  > summary(distlat)
 
 
   
