@@ -1,5 +1,7 @@
 #Lab Three
 
+> 16/20... you forgot a whole section!
+
 ###Exercise one questions
 1. 704 collections are associated with this reference. 
 2. 24429
@@ -30,6 +32,8 @@
 3. https://paleobiodb.org/data1.2/taxa/opinions.csv?base_name=Testudines&interval=Mesozoic&op_type=all
 4. https://paleobiodb.org/data1.2/colls/list.csv?base_name=Aves,Marsupialia,Sirenia&cc=US
 5. https://paleobiodb.org/data1.2/occs/list.csv?base_name=Ficus&taxon_reso=genus&show=refattr
+
+> Close, you need to use Gastropoda:Ficus to prevent getting speciemsn of the plant Ficus. -1 points
 
 ###Exercise four questions
 1. Gastrocoptidae is the family of the Gastrocopta genus.
@@ -62,3 +66,4 @@ API function
 
 >	}
 
+> You didn't do the ammonoid section!? - 6 points
