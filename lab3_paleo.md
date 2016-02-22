@@ -62,3 +62,9 @@ API function
 
 >	}
 
+###Morphologic measurements
+1. Species 1: 1,4,7,8,9,10,15,16,17,19,20,21,22,25
+   Species 2: 2,5,11,12,13,23,24
+   Species 3: 6,14,18
+2. Brayard and Bucher, Smithian (Early Triassic) ammonoid faunas from northwestern Guangxi (South China): taxonomy and biochronology.
+3. *Xenoceltites variocostatus* appears to correspond to specimens 2,6,10,11,12,18,21,22, and 25.
