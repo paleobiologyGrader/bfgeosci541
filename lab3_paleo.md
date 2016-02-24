@@ -1,5 +1,7 @@
 #Lab Three
 
+> What happened to my comments from the last time? Anyway 18.8/20
+
 ###Exercise one questions
 1. 704 collections are associated with this reference. 
 2. 24429
@@ -52,19 +54,21 @@
 ###Sixth question
 API function
 
-> downloadPBDB <- function(taxon,interval) {
-
->	URL <- paste("https://paleobiodb.org/data1.2/occs/list.csv?base_name=",taxon,"&interval=",interval,sep="")
-
->	tempPBDB <- read.csv(URL)
-
->	return(tempPBDB)
-
->	}
+````R
+downloadPBDB <- function(taxon,interval) {
+	URL <- paste("https://paleobiodb.org/data1.2/occs/list.csv?base_name=",taxon,"&interval=",interval,sep="")
+	tempPBDB <- read.csv(URL)
+	return(tempPBDB)
+	}
+````
 
 ###Morphologic measurements
 1. Species 1: 1,4,7,8,9,10,15,16,17,19,20,21,22,25
    Species 2: 2,5,11,12,13,23,24
    Species 3: 6,14,18
+> Where did these choices come from? What was your reasoning? -1 Points
+
 2. Brayard and Bucher, Smithian (Early Triassic) ammonoid faunas from northwestern Guangxi (South China): taxonomy and biochronology.
 3. *Xenoceltites variocostatus* appears to correspond to specimens 2,6,10,11,12,18,21,22, and 25.
+
+> Why did you make this association? -1 Points
