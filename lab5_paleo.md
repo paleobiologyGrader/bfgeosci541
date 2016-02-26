@@ -27,7 +27,7 @@ Problem set 1
   > gsOrdo(BrachiopodAbundance,"Late Ordovician")
   
 4.
-  > function(x,interval) {
+  > shanentropy <- function(x,interval) {
   
   > a <- x[interval,]
 
@@ -44,5 +44,10 @@ Problem set 1
   > return(f)
 
   > }
+  
+  > shanentropy(BivalveAbundance, "Late Cretaceous")
 
 5. 
+  > shanentropy(BivalveAbundance, "Paleocene")
+
+6. 
