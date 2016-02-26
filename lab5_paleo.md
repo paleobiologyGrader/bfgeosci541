@@ -27,3 +27,22 @@ Problem set 1
   > gsOrdo(BrachiopodAbundance,"Late Ordovician")
   
 4.
+  > function(x,interval) {
+  
+  > a <- x[interval,]
+
+  > b <- a[a != 0]
+  
+  > c <- sum(b)
+
+  > d <- b/c
+
+  > e <- d*log(d)
+
+  > f <- -sum(e)
+
+  > return(f)
+
+  > }
+
+5. 
