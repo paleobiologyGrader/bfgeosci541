@@ -200,3 +200,7 @@
 >     H
 
 > }))
+
+> cor(diversityframe[,"brach_diversity"], diversityframe[,"bivalve_diversity"])
+
+> [1] -0.2624135
