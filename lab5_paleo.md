@@ -102,4 +102,4 @@
   
 |                    |brach_richness |
 |:------------------:|:-------------:|
-| bivalve_richness   |     -0.2376513|
+|**bivalve_richness**|     -0.2376513|
