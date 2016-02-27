@@ -99,5 +99,5 @@
   > brachiopodframe <- data.frame(brach_richness=apply(BrachiopodAbundance, 1, specnumber))
 
   > cor(bivalveframe, brachiopodframe)
-                       brach_richness
-   bivalve_richness     -0.2376513
+                      | brach_richness|
+  | bivalve_richness   |  -0.2376513|
