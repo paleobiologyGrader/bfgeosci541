@@ -100,5 +100,5 @@
 
   > cor(bivalveframe, brachiopodframe)
  
-  >                   brach_richness
-  > bivalve_richness     -0.2376513
+                     brach_richness
+   bivalve_richness     -0.2376513
