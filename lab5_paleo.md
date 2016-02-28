@@ -116,6 +116,30 @@
 |:------------------:|:-------------:|
 |**bivalve_richness**|      -0.567194|
 
+In addition I also found the R squared statistic for the linear regression of the data (bivalve_richness intercept was about 320.2) after plotting it, then created a function to determine the p-value of that R squared value. 
+
+  > summary(lm(brach_richness~bivalve_richness, data=corframe))$r.squared
+  
+  > lmp <- function(model) {
+  
+  > if (class(model)!="lm")
+  
+  > stop("Not an object of class 'lm'")
+  
+  > f <- summary(model)$fstatistic
+  
+  > p <- pf(f[1], f[2], f[3], lower.tail=FALSE)
+  
+  > attributes(p) <- NULL
+  
+  > return(p)
+  
+  > }
+  
+  > lmp(lm(brach_richness~bivalve_richness, data=corframe))
+  
+  > [1] 0.001334033
+
 2)
 > diversityframe <- data.frame(brach_diversity=apply(BrachiopodAbundance, 1, function (x, index="simpson", MARGIN=1, base=exp(1))
 
