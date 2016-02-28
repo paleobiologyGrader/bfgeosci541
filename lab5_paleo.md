@@ -243,6 +243,8 @@ In addition I also found the R squared statistic for the linear regression of th
 
 > diversityframe <- diversityframe[match(InOrder$names, diversityframe$names),]
 
+> rownames(diversityframe) <- NULL
+
 > cor(diversityframe[,"brach_diversity"], diversityframe[,"bivalve_diversity"])
 
 > [1] -0.2624135
