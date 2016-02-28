@@ -15,7 +15,7 @@
   > [1] 0.2222222
   
 3)
-  > gsOrdo <- function(x,interval) {
+  > gs <- function(x,interval) {
 
   > a <- sum(x[interval,])^2
 
@@ -29,7 +29,7 @@
 
   > }
   
-  > gsOrdo(BrachiopodAbundance,"Late Ordovician")
+  > gs(BrachiopodAbundance,"Late Ordovician")
   
   > [1] 0.9784588
   
