@@ -120,6 +120,8 @@ In addition I also found the R squared statistic for the linear regression of th
 
   > summary(lm(brach_richness~bivalve_richness, data=corframe))$r.squared
   
+  > [1] 0.321709
+  
   > lmp <- function(model) {
   
   > if (class(model)!="lm")
