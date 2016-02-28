@@ -248,3 +248,11 @@ In addition I also found the R squared statistic for the linear regression of th
 > cor(diversityframe[,"brach_diversity"], diversityframe[,"bivalve_diversity"])
 
 > [1] -0.2624135
+
+3) The biggest drop in brachiopods, purely by richness, occurred between the Lopingian and Early Triassic.
+
+##Problem Set 4
+1)
+2)
+3)
+4)
