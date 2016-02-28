@@ -98,6 +98,10 @@
 
   > brachframe <- data.frame(brach_richness=apply(BrachiopodAbundance, 1, specnumber))
   
+  > bivalveframe <- mutate(bivalveframe, names=dimnames(bivalveframe)[[1]])
+  
+  > brachframe <- mutate(brachframe, names=dimnames(bivalveframe)[[1]])
+  
   > InOrder <- data.frame(names=c("Early Ordovician", "Middle Ordovician", "Late Ordovician", "Llandovery", "Wenlock", "Ludlow", "Pridoli", "Early Devonian", "Middle Devonian", "Late Devonian", "Mississippian", "Pennsylvanian" ,"Cisuralian", "Guadalupian", "Lopingian", "Early Triassic", "Middle Triassic", "Late Triassic", "Early Jurassic", "Middle Jurassic", "Late Jurassic", "Early Cretaceous", "Late Cretaceous", "Paleocene", "Eocene", "Oligocene", "Miocene", "Pliocene", "Pleistocene"))
   
   > bivalveframe <- bivalveframe[match(InOrder$names, bivalveframe$names),]
@@ -208,6 +212,10 @@
 >     H
 
 > }))
+
+> diversityframe <- mutate(diversityframe, names=dimnames(diversityframe)[[1]])
+
+> diversityframe <- diversityframe[match(InOrder$names, diversityframe$names),]
 
 > cor(diversityframe[,"brach_diversity"], diversityframe[,"bivalve_diversity"])
 
