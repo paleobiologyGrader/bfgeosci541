@@ -19,3 +19,14 @@
 > [5] "Wheeler Shale"    "Langston Fm"      "Parker Slate"     "Snowy Range Fm"  
 
 > [9] "Weymouth Fm"      "Harkless Fm"
+
+2)
+> GenusFrequencies <- data.frame(genus_frequencies=apply(GenusMatrix, 2, sum))
+
+3) 
+> hist(GenusFrequencies)
+
+4) Hollow curves!
+
+5) 
+> RareGenera <- subset(GenusFrequencies, genus_frequencies<=median(genus_frequencies))
