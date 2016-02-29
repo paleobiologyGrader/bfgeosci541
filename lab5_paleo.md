@@ -249,10 +249,15 @@ In addition I also found the R squared statistic for the linear regression of th
 
 > [1] -0.2624135
 
-3) The biggest drop in brachiopods, purely by richness, occurred between the Lopingian and Early Triassic.
+3) The biggest drop in brachiopods, purely by richness, occurred between the Lopingian and Early Triassic (loss of 343 species).
 
 ##Problem Set 4
 1)
+ > StandardizedRichness[1:6]
+    Mississippian     Pennsylvanian  Early Ordovician Middle Ordovician 
+            43.07             34.72             37.97             45.69 
+  Late Ordovician        Llandovery 
+            42.35             41.00 
 2)
 3)
 4)
