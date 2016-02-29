@@ -1,3 +1,6 @@
 #How good was the fossil record? Clues from the Californian Pleistocene
 ###By James W. Valentine (18 January 1989)
-####Written by Bryce Fenlon
+#####Written by Bryce Fenlon
+
+##Summary
+The question of exactly how well living associations are preserved in the fossil record has been around since the days of Darwin. Many problems exist with determining this, such as knowing the pool of potentially fossilizable species from which a fossil assemblage is formed, time averaging, and mode of fossilization to name a few. In this study, Valentine combines multiple common approaches in order to refine his logic. The first type of study discussed was that of using contemporary fauna to estimate and/or observe the way that fossilizable skeletons are recruited into dead assemblages. In research such as this the composition of the dead assemblages is often found to be fairly representative of the more fossilizable species that currently inhabit the environment. This particular article used a pool of 698 living species in the Bivalvia and Gastropoda classes.
