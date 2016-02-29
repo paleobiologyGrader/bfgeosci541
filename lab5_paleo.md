@@ -281,5 +281,8 @@ In addition I also found the R squared statistic for the linear regression of th
 > cor(brachframe$brach_richness, brachframe$brach_standard)
 
 > [1] 0.8849289
-3)
+
+3) When plotting unstandardized brachiopod and bivalve richness, an R squared value of 0.321709 was achieved through linear regression. Doing the same with standardized richness, the R squared value was slightly lower at 0.2963702. The two plots are different in their fit, but that doesn't explain the difference between standardized and unstandardized samples. Standardization is equivalent to saying how many standard deviations a dependent variable will change, instead of looking at aggregate number of species.
+
 4)
+ 
