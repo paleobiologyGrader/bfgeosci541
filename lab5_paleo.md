@@ -283,6 +283,39 @@ In addition I also found the R squared statistic for the linear regression of th
 > [1] 0.8849289
 
 3) When plotting unstandardized brachiopod and bivalve richness, an R squared value of 0.321709 was achieved through linear regression. Doing the same with standardized richness, the R squared value was slightly lower at 0.2963702. The two plots are different in their fit, but that doesn't explain the difference between standardized and unstandardized samples. Standardization is equivalent to saying how many standard deviations a dependent variable will change, instead of looking at aggregate number of species.
+> StandardizedRichness<-apply(BivalveAbundance,1,subsampleIndividuals,Quota=124)
+
+> bivalve_standard <- StandardizedRichness
+
+> bivalve_standard <- data.frame(bivalve_standard, names=names(bivalve_standard))
+
+> bivalve_standard <- bivalve_standard[match(InOrder$names, bivalve_standard$names),]
+
+> bivalve_standard$names <- NULL
+
+> bivalveframe <- data.frame(bivalveframe, bivalve_standard)
+
+> richness <- data.frame(bivalveframe, brachframe)
+
+> plot(richness$bivalve_standard, richness$brach_standard, type="p")
+
+> summary(lm(richness$bivalve_standard~richness$brach_standard))$r.squared
+
+> [1] 0.2963702
+
+> lmp(lm(richness$bivalve_standard~richness$brach_standard))
+
+> [1] 0.002264659
+
+> plot(richness$bivalve_richness, richness$brach_richness, type="p")
+
+> summary(lm(richness$bivalve_richness~richness$brach_richness))$r.squared
+
+> [1] 0.321709
+
+> lmp(lm(richness$bivalve_richness~richness$brach_richness))
+
+> [1] 0.001334033
 
 4) Based purely on the correlation gleaned from question 1 in problem set three, there is evidence to show that as bivalve richness increased there was a corresponding drop in brachiopod richness. Although this could be indicative of competition between the two classes, there could be more subtle underlying factors such as differences in metabolism and available nutrients.
  
