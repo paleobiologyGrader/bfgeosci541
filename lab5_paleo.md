@@ -262,8 +262,8 @@ In addition I also found the R squared statistic for the linear regression of th
 > StandardizedRichness[1:6]
  
   |Mississippian  | Pennsylvanian | Early Ordovician |Middle Ordovician | Late Ordovician | Llandovery |
-  |--------------:|--------------:|-----------------:|-----------------:|----------------:|-----------:|
-  |43.07          |   34.72       |      37.97       |       45.69      |      42.35      |       41.00| 
+  |:-------------:|:-------------:|:----------------:|:----------------:|:---------------:|:----------:|
+  |          43.07|          34.72|             37.97|             45.69|            42.35|       41.00| 
 
 2)
 > brach_standard <- StandardizedRichness
