@@ -27,6 +27,13 @@
 > hist(GenusFrequencies)
 
 4) Hollow curves!
+> We are the hollow men
+
+> We are the stuffed men
+
+> Leaning together
+
+>   Headpiece filled with straw. Alas!
 
 5) 
 > RareGenera <- subset(GenusFrequencies, genus_frequencies<=median(genus_frequencies))
