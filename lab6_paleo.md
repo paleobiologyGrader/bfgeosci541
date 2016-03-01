@@ -30,39 +30,39 @@
 
 4) Hollow curves!
 > We are the hollow men
-
+<br />
 > We are the stuffed men
-
+<br />
 > Leaning together
-
+<br />
 > Headpiece filled with straw. Alas!
-
+<br />
 > Our dried voices, when
-
+<br />
 > We whisper together
-
+<br />
 > Are quiet and meaningless
-
+<br />
 > As wind in dry grass
-
+<br />
 > Or rats' feet over broken glass
-
+<br />
 > In our dry cellar
-<br />
+
 > Shape without form, shade without colour,
-
-> Paralysed force, gesture without motion;
 <br />
+> Paralysed force, gesture without motion;
+
 > Those who have crossed
-
+<br />
 > With direct eyes, to death's other Kingdom
-
+<br />
 > Remember us—if at all—not as lost
-
+<br />
 > Violent souls, but only
-
+<br />
 > As the hollow men
-
+<br />
 > The stuffed men.
 
 5) 
