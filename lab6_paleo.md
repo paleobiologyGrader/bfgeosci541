@@ -10,6 +10,8 @@
 
 ##Problem Set 2
 1) using arrange{dplyr}
+> order_rich <- data.frame(richness=apply(OrderMatrix, 1, specnumber))
+
 > CandidateUnits <- c(as.character(arrange(order_rich, desc(richness))[1:10,]$names))
 
 > CandidateUnits
