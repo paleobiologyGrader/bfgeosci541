@@ -9,7 +9,7 @@
 2) By default, because Macrostrat is only in North America currently, any occurrence outside of North America is dropped in the matching procedure. 
 
 ##Problem Set 2
-1)
+1) using arrange{dplyr}
 > CandidateUnits <- c(as.character(arrange(order_rich, desc(richness))[1:10,]$names))
 
 > CandidateUnits
