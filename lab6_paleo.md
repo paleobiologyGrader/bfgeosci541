@@ -35,7 +35,35 @@
 
 > Leaning together
 
->   Headpiece filled with straw. Alas!
+> Headpiece filled with straw. Alas!
+
+> Our dried voices, when
+
+> We whisper together
+
+> Are quiet and meaningless
+
+> As wind in dry grass
+
+> Or rats' feet over broken glass
+
+> In our dry cellar
+<br />
+> Shape without form, shade without colour,
+
+> Paralysed force, gesture without motion;
+<br />
+> Those who have crossed
+
+> With direct eyes, to death's other Kingdom
+
+> Remember us—if at all—not as lost
+
+> Violent souls, but only
+
+> As the hollow men
+
+> The stuffed men.
 
 5) 
 > RareGenera <- subset(GenusFrequencies, genus_frequencies<=median(genus_frequencies))
