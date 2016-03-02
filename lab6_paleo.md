@@ -69,3 +69,9 @@
 
 5) 
 > RareGenera <- subset(GenusFrequencies, genus_frequencies<=median(genus_frequencies))
+
+##Problem Set 3
+1)
+> CandidateMatrix <- GenusMatrix[c(CandidateUnits),]
+
+2) Due to the fact I saved GenusFrequencies as a data frame (therefore RareGenera is a data frame) I had to alter the function to look for names of the CandidateMatrix in **rownames** of the RareGenera, instead of names (which would have been applied to a matrix).
