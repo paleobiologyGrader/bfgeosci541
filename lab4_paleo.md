@@ -1,5 +1,7 @@
 #Lab Exercise Four
 
+> 20/20
+
 ##Section one
 1. Miocene=603, Early Jurassic=169, Late Cretaceous=375, Pennsylvanian=133
   > sum(PresencePBDB["Miocene",])
@@ -11,6 +13,8 @@
   > which(PresencePBDB[,"Mytilus"]==1)
 
 4. We can infer from 3 that *Mytilus* was present in the Mississippian, Middle Devonian, Late Devonian, Guadalupian, and Lopingian epochs.
+
+> Why?
 
 ##Section two
 1. jacsim(PresencePBDB) = 0.8279221
@@ -35,6 +39,16 @@
   
   > }
   
+
+````R
+# Alternatively
+jaccard<-function(x,y) {
+    Sums<-x+y
+    Frequencies<-table(Sums)
+    Jaccard<-Frequencies["2"]/(Frequencies["1"]+Frequencies["2"])
+    return(Jaccard)
+    }
+````
   
 2. 1.0-0.8279221=0.1720779
 
@@ -47,6 +61,7 @@
   > "Paleocene"),], method="jaccard")
   
 ##Section three
+
 1.
   > RandomEpochs <- PresencePBDB[c("Pliocene","Oligocene","Paleocene","Early Cretaceous","Late Jurassic","Middle Jurassic"),]
 
@@ -60,6 +75,7 @@
 5. The defining boundary between the Cretaceous and Paleocene is the K-Pg mass extinction event. In the Early Cretaceous, ecological niches were filled with quite a different variety of creatures than in the Paleocene, simply due to adaptive radiation and speciation after the non-avian dinosaurs lost their battle with entropy.
 
 ##Section four
+
 1.
   > Ordovician <- downloadPBDB(Taxa="animalia",StartInterval="Ordovician",StopInterval="")
 
@@ -80,8 +96,3 @@
   > cor(combinedlng[,"DCA1"],combinedlng[,"y"])
   
   > cor(combinedlng[,"DCA2"],combinedlng[,"y"])
-  
-
-
-
-  
