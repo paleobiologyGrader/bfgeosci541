@@ -74,4 +74,19 @@
 1)
 > CandidateMatrix <- GenusMatrix[c(CandidateUnits),]
 
-2) Due to the fact I saved GenusFrequencies as a data frame (therefore RareGenera is a data frame) I had to alter the function to look for names of the CandidateMatrix in **rownames** of the RareGenera, instead of names (which would have been applied to a matrix).
+2) Due to the fact I saved GenusFrequencies as a data frame (therefore RareGenera is a data frame) I had to alter the function to look for names of the CandidateMatrix in **rownames** of the RareGenera, instead of **names** (which would have been applied to a matrix).
+> PercentShared<- apply(CandidateMatrix,1,percentRare,RareGenera)
+
+> PercentShared
+
+>      Chancellor       Kinzers Fm       Stephen Fm Marjum Limestone 
+ 
+>      0.5714286        0.2586207        0.3055556        0.3559322 
+
+>   Wheeler Shale      Langston Fm     Parker Slate   Snowy Range Fm 
+
+>       0.2307692        0.1632653        0.2812500        0.1951220 
+
+>     Weymouth Fm      Harkless Fm 
+
+>       0.6764706        0.4137931 
