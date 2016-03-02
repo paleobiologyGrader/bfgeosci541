@@ -74,7 +74,7 @@
 1)
 > CandidateMatrix <- GenusMatrix[c(CandidateUnits),]
 
-2) Due to the fact I saved GenusFrequencies as a data frame (therefore RareGenera is a data frame) I had to alter the function to look for names of the CandidateMatrix in **rownames** of the RareGenera, instead of **names**.
+2) Due to the fact I saved GenusFrequencies as a data frame (therefore RareGenera is a data frame) I had to alter the function to look for names of the CandidateMatrix in **rownames** of the RareGenera, instead of **names**. The four stratigraphic units I included below as most likely to qualify as Lagerstätten contain the highest percentages of rare genera (at least according to the list I made), one of the qualities of Lagerstätten.
 > PercentShared<- apply(CandidateMatrix,1,percentRare,RareGenera)
 
 > PercentShared
