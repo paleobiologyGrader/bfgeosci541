@@ -28,7 +28,7 @@
 3) 
 > hist(GenusFrequencies)
 
-4) A hollow curve! And this probably doesn't belong here, but don't you need breaks too?
+4) A hollow curve.
 > We are the hollow men
 <br />
 > We are the stuffed men
