@@ -83,7 +83,7 @@
  
 >      0.5714286        0.2586207        0.3055556        0.3559322 
 
->   Wheeler Shale      Langston Fm     Parker Slate   Snowy Range Fm 
+>    Wheeler Shale      Langston Fm     Parker Slate   Snowy Range Fm 
 
 >       0.2307692        0.1632653        0.2812500        0.1951220 
 
