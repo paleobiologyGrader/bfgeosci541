@@ -86,7 +86,7 @@ CandidateMatrix <- GenusMatrix[c(CandidateUnits),]
 PercentShared<- apply(CandidateMatrix,1,percentRare,RareGenera)
 PercentShared
 Chancellor    Marjum Limestone    Weymouth Fm    Harkless Fm 
-0.5714286            0.3559322      0.6764706      0.4137931
+ 0.5714286           0.3559322      0.6764706      0.4137931
 ```
 
 3) The Marjum formation in the House Range of Utah contains exceptional trilobite and echinoderm fossils as well as worms and other soft bodied organisms in certain shale beds, reminiscent of the level of preservation at the Burgess Shale. 
