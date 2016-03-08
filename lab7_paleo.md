@@ -8,14 +8,19 @@ youngGenus <- DataPBDB %>% group_by(genus) %>% summarize(youngest=min(min_ma))
 ```
 4)
 ```
-> maxOccurrences <- DataPBDB %>% group_by(genus) %>% summarize(max_occur=max(length(occurrence_no)))
-> max(maxOccurrences$max_occur)
-[1] 1916
+maxOccurrence <- DataPBDB %>% group_by(genus) %>% summarize(max_occur=max(length(occurrence_no))) %>%
+slice(which(.$max_occur==max(.$max_occur)))
+maxOccurrence
+Source: local data frame [1 x 2]
+
+    genus max_occur
+    (chr)     (int)
+1 Anadara      1916
 ```
 5)
 ```
-> data.frame(oldGenus[which(oldGenus$genus=="Anadara"),], youngGenus[which(youngGenus$genus=="Anadara"),]) %>%
-+ select(genus, youngest, oldest) %>% mutate(difference = oldest - youngest, oldest=NULL, youngest=NULL)
+data.frame(oldGenus[which(oldGenus$genus=="Anadara"),], youngGenus[which(youngGenus$genus=="Anadara"),]) %>%
+select(genus, youngest, oldest) %>% mutate(difference = oldest - youngest, oldest=NULL, youngest=NULL)
 ```
 
 ##Problem Set 2
