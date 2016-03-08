@@ -21,6 +21,8 @@ Source: local data frame [1 x 2]
 ```
 data.frame(oldGenus[which(oldGenus$genus=="Anadara"),], youngGenus[which(youngGenus$genus=="Anadara"),]) %>%
 select(genus, youngest, oldest) %>% mutate(difference = oldest - youngest, oldest=NULL, youngest=NULL)
+    genus difference
+1 Anadara         66
 ```
 
 ##Problem Set 2
