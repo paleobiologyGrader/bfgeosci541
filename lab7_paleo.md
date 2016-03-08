@@ -17,7 +17,7 @@ Source: local data frame [1 x 2]
     (chr)     (int)
 1 Anadara      1916
 ```
-5)
+5) 66 million years
 ```
 data.frame(oldGenus[which(oldGenus$genus=="Anadara"),], youngGenus[which(youngGenus$genus=="Anadara"),]) %>%
 select(genus, youngest, oldest) %>% mutate(difference = oldest - youngest, oldest=NULL, youngest=NULL)
@@ -26,7 +26,7 @@ select(genus, youngest, oldest) %>% mutate(difference = oldest - youngest, oldes
 ```
 
 ##Problem Set 2
-1) To describe it from the inside out, a sample from the ```paleolng``` column of the ```Lucina``` is being taken - with replacement - which has a length equal to the number of elements in ```paleolng```. The mean of the sample is subsequently taken, and in the case of ```ResampledMeans``` this whole process is repeated 1000 times.
+1) To describe it from the inside out, a sample from the ```paleolng``` column of the ```Lucina``` genus data is being taken - with replacement - which has a length equal to the number of elements in ```paleolng```. The mean of the sample is subsequently taken, and in the case of ```ResampledMeans``` this whole process is repeated 1000 times.
 
 2)
 ```
