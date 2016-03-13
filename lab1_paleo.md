@@ -235,7 +235,7 @@ Or
 
 > Barrel<-c(x,y)
 
-> ReplicatedMeans<-array
+> ReplicatedMeans<-array(data=NA, dim=iterations)
 
 > for (counter in 1:iterations) {
 
