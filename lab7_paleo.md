@@ -85,3 +85,40 @@ OldGenus <- ExtantData %>% group_by(genus) %>% summarize(oldest=max(max_ma))
 StratRange <- data.frame(OldGenus, YoungGenus) %>% select(genus, oldest, youngest) %>%
 mutate(Range=oldest-youngest, oldest=NULL, youngest=NULL)
 ```
+4)
+```
+YoungGenus[which(YoungGenus$youngest!=0),]
+```
+5) Created subsets of each genus before estimating the confidence intervals below.
+```
+estimateExtinction(Scrobicularia[,"min_ma"], 0.95)
+ Earliest    Latest 
+  0.01170 -34.70966
+estimateExtinction(Meiocardia[,"min_ma"], 0.95)
+ Earliest    Latest 
+ 0.011700 -5.329574
+estimateExtinction(Dimya[,"min_ma"], 0.95)
+ Earliest    Latest 
+ 0.781000 -2.054688
+estimateExtinction(Digitaria[,"min_ma"], 0.95)
+ Earliest    Latest 
+ 0.781000 -3.761154
+estimateExtinction(Cuspidaria[,"min_ma"], 0.95)
+ Earliest    Latest 
+2.5880000 0.7771965 
+estimateExtinction(Arctica[,"min_ma"], 0.95)
+ Earliest    Latest 
+ 0.011700 -1.799104 
+estimateExtinction(Aloides[,"min_ma"], 0.95)
+Earliest   Latest 
+   5.333     -Inf 
+estimateExtinction(Kurtiella[,"min_ma"], 0.95)
+ Earliest    Latest 
+  0.01170 -34.70966 
+estimateExtinction(Gouldia[,"min_ma"], 0.95)
+ Earliest    Latest 
+ 0.011700 -2.047386 
+estimateExtinction(Acrosterigma[,"min_ma"], 0.95)
+ Earliest    Latest 
+ 0.011700 -3.481128
+``` 
