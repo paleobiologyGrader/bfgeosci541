@@ -71,7 +71,7 @@ Earliest   Latest
 length(DataPBDB$occurrence_no) - length(ExtantData$occurrence_no)
 [1] 8521
 ```
-2) ```DataPBDB``` has 1,018 unique genera, ```ExtantData``` has 532.
+2) ```DataPBDB``` has 1,018 unique genera, ```ExtantData``` has 532. This constitutes 52.2% of all Cenozoic genera.
 ```
 length(unique(DataPBDB$genus)) - length(unique(ExtantData$genus))
 [1] 486
