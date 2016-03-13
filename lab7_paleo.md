@@ -1,15 +1,16 @@
 2)
 ```
-oldGenus <- DataPBDB %>% group_by(genus) %>% summarize(oldest=max(max_ma))
+OldGenus <- DataPBDB %>% group_by(genus) %>% summarize(oldest=max(max_ma))
 ```
 3)
 ```
-youngGenus <- DataPBDB %>% group_by(genus) %>% summarize(youngest=min(min_ma))
+YoungGenus <- DataPBDB %>% group_by(genus) %>% summarize(youngest=min(min_ma))
 ```
 4)
 ```
 maxOccurrence <- DataPBDB %>% group_by(genus) %>% summarize(max_occur=max(length(occurrence_no))) %>%
 slice(which(.$max_occur==max(.$max_occur)))
+
 maxOccurrence
 Source: local data frame [1 x 2]
 
@@ -17,9 +18,9 @@ Source: local data frame [1 x 2]
     (chr)     (int)
 1 Anadara      1916
 ```
-5) 66 million years
+5) 66 million years, the whole of the Cenozoic.
 ```
-data.frame(oldGenus[which(oldGenus$genus=="Anadara"),], youngGenus[which(youngGenus$genus=="Anadara"),]) %>%
+data.frame(OldGenus[which(OldGenus$genus=="Anadara"),], YoungGenus[which(YoungGenus$genus=="Anadara"),]) %>%
 select(genus, youngest, oldest) %>% mutate(difference = oldest - youngest, oldest=NULL, youngest=NULL)
     genus difference
 1 Anadara         66
@@ -60,6 +61,27 @@ Earliest   Latest
 4) The lower bound (2.58800) corresponds almost exactly to the younger bound for the last appearance according to the Encyclopedia of Life, given at 2.59 ma. So in this particular case it would make more sense to trust the fossil record over the confidence interval.
 
 ##Problem Set 4
-1) Ecologically, this method is based on the assumption that community and population dynamics between and amongst species had no effect on where and when potentially fossilizable material would one day be deposited. Obviously that is an unfounded assumption. For example, if we were 200 million years in the future doing this analysis on human fossils, we wouldn't assume they are randomly distributed in time. There is constant flux in trade, interaction, and population flow happening between and within cities that would be taken into account when extrapolating so far into the past. Not to mention human interaction with the biosphere has caused irreparable damage which would probably affect deposition of sediments and taphonomic processes.
+1) Ecologically, this method is based on the assumption that community and population dynamics between and amongst species had no effect on where and when potentially fossilizable material would one day be deposited. Obviously that is an unfounded assumption. For example, if we were 200 million years in the future doing this analysis on human fossils, we wouldn't assume they are randomly distributed in time. There is constant flux in trade, interaction, and population flow happening between and within cities that would be taken into account when extrapolating so far into the past. Not to mention human interaction with the biosphere has caused irreparable change which would probably affect deposition of sediments and taphonomic processes.
 
-2) Geologically 
+2) Geologically, processes which affect the deposition of sediment should not be overlooked. Things such as recession and transgression of seas, geographical changes affecting sediment quantity and composition, as well as more stochastic processes such as orogeny and severe bouts of volcanic activity would all have huge impacts on how or if fossilizable material is preserved. 
+
+##Problem Set 5
+1) ```DataPBDB``` has 67,617 occurrences, and ```ExtantData``` has 59,096.
+```
+length(DataPBDB$occurrence_no) - length(ExtantData$occurrence_no)
+[1] 8521
+```
+2) ```DataPBDB``` has 1,018 unique genera, ```ExtantData``` has 532.
+```
+length(unique(DataPBDB$genus)) - length(unique(ExtantData$genus))
+[1] 486
+```
+3)
+```
+YoungGenus <- ExtantData %>% group_by(genus) %>% summarize(youngest=min(min_ma))
+
+OldGenus <- ExtantData %>% group_by(genus) %>% summarize(oldest=max(max_ma))
+
+StratRange <- data.frame(OldGenus, YoungGenus) %>% select(genus, oldest, youngest) %>%
+mutate(Range=oldest-youngest, oldest=NULL, youngest=NULL)
+```
