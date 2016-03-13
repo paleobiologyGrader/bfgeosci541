@@ -89,7 +89,7 @@ mutate(Range=oldest-youngest, oldest=NULL, youngest=NULL)
 ```
 YoungGenus[which(YoungGenus$youngest!=0),]
 ```
-5) Created subsets of each genus before estimating the confidence intervals below.
+5) Created subsets of each genus before estimating the confidence intervals below. Genus *Aloides* only had one occurrence, which explains the inability of the function to find an upper range for the extinction age.
 ```
 estimateExtinction(Scrobicularia[,"min_ma"], 0.95)
  Earliest    Latest 
