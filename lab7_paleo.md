@@ -33,7 +33,11 @@ select(genus, youngest, oldest) %>% mutate(difference = oldest - youngest, oldes
 ```
 plot(density(ResampledMeans))
 ```
-3)
+3) Using an arbitrary cutoff of 0.05 for similarity, the mean of ```ResampledMeans``` is indeed similar to the original mean of the data.
+```
+mean(ResampledMeans)-24.1997
+[1] 0.04221836
+```
 4)
 ```
 ResampledMeans <- sort(ResampledMeans, decreasing=FALSE)
