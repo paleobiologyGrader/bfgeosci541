@@ -1,3 +1,6 @@
+#Lab Exercise 7
+##Problem Set 1
+1) ```max_ma``` and ```min_ma``` represent the oldest and most recent presence in the stratigraphic record, respectively, of each occurrence in the data set.
 2)
 ```
 OldGenus <- DataPBDB %>% group_by(genus) %>% summarize(oldest=max(max_ma))
@@ -93,7 +96,7 @@ mutate(Range=oldest-youngest, oldest=NULL, youngest=NULL)
 ```
 YoungGenus[which(YoungGenus$youngest!=0),]
 ```
-5) Created subsets of each genus before estimating the confidence intervals below. Genus *Aloides* only had one occurrence, which explains the inability of the function to find an upper range for the extinction age.
+5) 80% have negative values for the upper range of extinction, indicating a possibility of still being extant. I created subsets of each genus before estimating the confidence intervals below. Genus *Aloides* only had one occurrence, which explains the inability of the function to find an upper range for the extinction age. *Aloides* was not included in the above percentage for this reason.
 ```
 estimateExtinction(Scrobicularia[,"min_ma"], 0.95)
  Earliest    Latest 
