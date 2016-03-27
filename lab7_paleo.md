@@ -1,6 +1,7 @@
 #Lab Exercise 7
 ##Problem Set 1
 1) ```max_ma``` and ```min_ma``` represent the oldest and most recent presence in the stratigraphic record, respectively, of each occurrence in the data set.
+
 2)
 ```
 OldGenus <- DataPBDB %>% group_by(genus) %>% summarize(oldest=max(max_ma))
