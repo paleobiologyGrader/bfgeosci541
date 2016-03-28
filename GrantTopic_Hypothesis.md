@@ -5,6 +5,8 @@ Harper, D.A.T., Zhan, R., and Jin, J. "The Great Ordovician Biodiversification E
 
 Westrop, S.R., and Adrain, J.M. "Sampling at the species level: Impact of spatial biases on diversity gradients." *Geology* (2001) 29.10: 903-906. doi:10.1130/0091-7613(2001)​029<0903:SATSLI>​2.0.CO;2
 
+DeVries, T., Primeau, F. "Dynamically and Observationally Constrained Estimates of Water-Mass Distributions and Ages in the Global Ocean." *American Meteorological Society* (2011) 41: 2381-2401. doi:10.1175/JPO-D-10-05011.1
+
 Balseiro, D., Waisfeld, B.G. "Ecological instability in Upper Cambrian-Lower Ordovician trilobite communities from Northwestern Argentina." *Paleogeography, Paleoclimatology, Paleoecology* (2013) 370: 64-76. doi:10.1016/j.palaeo.2012.11.019
 
-DeVries, T., Primeau, F. "Dynamically and Observationally Constrained Estimates of Water-Mass Distributions and Ages in the Global Ocean." *American Meteorological Society* (2011) 41: 2381-2401. doi:10.1175/JPO-D-10-05011.1
+
