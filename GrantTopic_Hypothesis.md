@@ -6,6 +6,7 @@ flux through orientable surfaces defined at each epoch by the planar distributio
   hard to do in R
   MATLAB?
   thickness defined by rock package thickness might be possible but data and time intensive
+  or surfaces defined by paleocontinent shape/position relying on paleo maps created for each stage in R
   
   
 
