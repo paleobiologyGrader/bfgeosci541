@@ -20,7 +20,7 @@ Emigration vs immigration effects on biodiversity change
 Does circulation of species in fossil record (simulation Andrew showed us) around continents over geologic time correspond to continental/tectonic circulation rates
  ```
  ```
- Extend Jackson and Sax 2010 to delayed extinction debt and immigration credit to geoplate flux by stage, with the forcing events as introduction/extirpation of trilobites to a specific plate
+ Extend Jackson and Sax 2010 to delayed extinction debt and immigration credit to brachiopod geoplate flux by stage, with the strength of the forcing events as amount of introduction/extirpation of trilobites to a specific plate (i.e. nonzero, positive or negative trilobite species flux since previous stage)
  ```
 
 
