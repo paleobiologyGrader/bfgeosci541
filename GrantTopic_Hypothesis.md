@@ -1,8 +1,24 @@
 ###Introduction
-(839 of 1000)
-Explanations of global trilobite biodiversity decline range from active displacement by brachiopod dominated environments to paleocontinental movement and its differing effects on various taxonomic ranks (Harper et al 2015; Westrop and Adrain 2001). These include change in the depth of seas, freshwater circulation, and ocean flux patterns (DeVries and Primeau 2011; Balseiro and Waisfeld 2013). Regardless of these potentially confounding effects, trilobite familial abundance change over the Proteozoic was strongly linked to the rate of contemporaneous brachiopod radiation. Primarily through the use of paleocoordinate data, modeling inward (establishment) or outward (extirpation) familial flux by geoplate between epochs will be possible. A secondary goal will be to extend Jackson and Sax’s 2010 paper on delayed extinction debts and immigration credits to the analysis of geoplate flux. 
+(899 of 1000)
+Explanations of global trilobite biodiversity decine range from active displacement by brachiopod dominated environments to paleocontinental movement and its differing effects on various taxonomic ranks (Harper et al 2015; Westrop and Adrain 2001). These include change in the depth of seas, freshwater circulation, and ocean flux patterns (DeVries and Primeau 2011; Balseiro and Waisfeld 2013). Regardless of these potentially confounding effects, trilobite familial abundance change over the Proteozoic was strongly linked to the rate of contemporaneous brachiopod radiation. Primarily through the use of paleocoordinate data, modeling inward (establishment) or outward (extirpation) familial flux by geoplate between epochs will be possible. A secondary goal will be to adapt Jackson and Sax’s concepts on delayed extinction debts and immigration credits (2010) to the analysis of geoplate flux. 
 
 ###Justification
+Addresses how rate of overturn of faunal communities leads to long-term/permanent regional biodiversity change
+No single model incorporating brachiopod and trilobite biodiversity change over geologic time in the literature
+Could provide new method for modeling community interaction dynamics on a geologic timescale by utilizing gradient analysis
+Societal: could also provide novel methods for prediction of the effects of biodiversity change on modern habitats/communities
+
+###Research Plan
+Construct and clean datasets for brachiopods and trilobites from Cambrian – Permian
+Do a soft cull of the cleaned datasets
+Match each dataset to internationally recognized epochs/stages
+Create family presence/absence data tables for each geoplate in each epoch/stage for both brachiopods and trilobites
+Make gradients (vector fields) for each epoch/stage; magnitude=total trilobite richness of geoplate, direction=ratio of brachiopod family geoplate richness/trilobite family geoplate richness (<1=trilobite dominated, >1=brachiopod dominated, 1=no dominance)
+Analyze differences between epoch/stage  flux; change in vector direction = change in familial dominance between clades, change in vector magnitude = change in trilobite richness 
+Finally, look at the data to see if brachiopods or trilobites are acting to delay or accelerate the others’ extirpation/colonization
+Look for relationship between persistence through time of a clade and initial family density of that clade in each geoplate
+If both extirpation of trilobites (decrease in magnitude) and immigration of brachiopods (positive change in slope) are slow (small changes), then the incumbents are probably limiting establishment capability of brachiopods
+If both are fast (large changes), then the new competitors are likely accelerating extirpation of the incumbents
 
 maybe
 ```
