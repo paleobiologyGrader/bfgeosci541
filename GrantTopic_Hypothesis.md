@@ -36,4 +36,15 @@ DeVries, T., Primeau, F. "Dynamically and Observationally Constrained Estimates 
 
 Balseiro, D., Waisfeld, B.G. "Ecological instability in Upper Cambrian-Lower Ordovician trilobite communities from Northwestern Argentina." *Paleogeography, Paleoclimatology, Paleoecology* (2013) 370: 64-76. doi:10.1016/j.palaeo.2012.11.019
 
+Jackson, S.T. and Sax, D.F. “Balancing biodiversity in a changing environment: extinction debt, immigration credit, and species turnover.” *Trends in Ecology & Evolution* (2010) 25.3: 153-160. doi:10.1016/j.tree.2009.10.001
+
+Connolly, S.R. and Miller, A.I. “Global Ordovician faunal transitions in the marine benthos: proximate causes.” *Paleobiology* (2001) 27.4: 779-795. doi:10.1666/0094-8373(2001)027<0779:GOFTIT>2.0.CO;2
+
+Zhang, Z., Robson, S.P., Emig, C., and Shu, D. “Early Cambrian radiation of brachiopods: A perspective from South China.” *Gonwana Research* (2008) 14: 241-254. doi:10.1016/j.gr.2007.08.001
+
+Valentine, J.W. and Moores, E.M. “Plate-tectonic Regulation of Faunal Diversity and Sea Level: a Model.” *Nature* (1970) 228: 657-659. doi:10.1038/228657a0
+
+Zhiyi, Z., Wenwei, Y., and Zhiqiang, Z. “Patterns, processes and likely causes of the Ordovician trilobite radiation in South China.” *Geological Journal* (2007) 42: 297-313. doi:10.1002/gj.1076
+
+Peters, S.E. and Heim, N.A. “Stratigraphic distribution of marine fossils in North America.” *Geology* (2010) 39.3: 259-262. doi:10.1130/G31442.
 
