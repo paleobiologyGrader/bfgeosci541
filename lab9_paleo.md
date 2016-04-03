@@ -31,3 +31,18 @@ Anthozoa <- downloadPBDB("Anthozoa", StartInterval="Paleocene", StopInterval="Eo
 points(Anthozoa$paleolng, Anthozoa$paleolat, col="red", cex=0.5)
 ```
 6)
+
+###Problem set 3
+1)```Perisso <- downloadPBDB("Perissodactyla", StartInterval="Paleocene", StopInterval="Oligocene")```
+
+2) Members of Perissodactyla are colloquially known as odd-toed ungulates. They include modern members of Equidae, Rhinocerotidae, and Tapiridae. Specific examples would include the eight living species of horses and zebras and the (mostly endangered) five species of rhino.
+
+3)```Perisso[which(Perisso$collection_no == 112723),]```
+
+4)
+
+5)
+
+6)
+
+7)
