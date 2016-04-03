@@ -39,7 +39,7 @@ points(Anthozoa$paleolng, Anthozoa$paleolat, col="red", cex=0.5)
 
 3)```Perisso[which(Perisso$collection_no == 112723),]```
 
-4)
+4) This geoplate's modern day region is the Indian subcontinent. 
 
 5)
 
