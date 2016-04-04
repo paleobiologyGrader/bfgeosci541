@@ -39,10 +39,15 @@ points(Anthozoa$paleolng, Anthozoa$paleolat, col="red", cex=0.5)
 
 3)```Perisso[which(Perisso$collection_no == 112723),]```
 
-4) This geoplate's modern day region is the Indian subcontinent. 
+4) 501. This geoplate's modern day region is the Indian subcontinent, probably close to the Himalayas.
 
-5)
+5) 
+```
+Perisso2 <- Perisso[which(Perisso$geoplate == 501),]
+length(Perisso2)
+[1] 26
+```
 
-6)
+6) Region-X was originally south of what we know as Africa (although it was rotated clockwise from its current orientation; region-X was actually south of modern Somalia and Kenya), and it moved northward until it "slammed" into the modern continent of Asia. 
 
 7)
