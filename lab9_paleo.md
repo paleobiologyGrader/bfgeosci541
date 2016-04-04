@@ -48,6 +48,6 @@ length(Perisso2)
 [1] 26
 ```
 
-6) Region-X was originally south of what we know as Africa (although it was rotated clockwise from its current orientation; region-X was actually south of modern Somalia and Kenya), and it moved northward until it "slammed" into the modern continent of Asia. 
+6) Region-X was originally south of what we know as Africa (although Africa was rotated clockwise from its current orientation; region-X was actually south of modern Somalia and Kenya), and it moved northward until it "slammed" into the modern continent of Asia. 
 
 7) By using the Paleobiology Database it is plain to see, when looking at successive stages, that with regards to the first two scenarios Perissodactyla migrated from China to region-X during the Paleogene. The third is half wrong, the occurrences in China and region-X are not unrelated, but it does appear to be the case that Perissodactyla originated in what is now North America and subsequently migrated to China and then to region-X.
