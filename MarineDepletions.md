@@ -1,5 +1,5 @@
 #Origination, extinction, and mass depletions of marine diversity
-###Richard K. Bambach, Andrew H. Knoll, and Steve C. Wang (2004)
+###By Bambach, R.K., Knoll, A.H., and Wang, S.C. (2004)
 #####Written by Bryce Fenlon
 
 ##Summary
