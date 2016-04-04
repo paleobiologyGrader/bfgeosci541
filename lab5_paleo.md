@@ -153,7 +153,8 @@ lmp(lm(brach_richness~bivalve_richness, data=corframe))
 2)
 
 ```R
-  diversityframe <- data.frame(brach_diversity=apply(BrachiopodAbundance, 1, function (x, index="simpson", MARGIN=1, base=exp(1)) {
+  diversityframe <- data.frame(brach_diversity=apply(BrachiopodAbundance, 1, function (x, index="simpson", MARGIN=1, base=exp(1)) 
+  {
     x <- drop(as.matrix(x))
     INDICES <- c("shannon", "simpson", "invsimpson")
     index <- match.arg(index, INDICES)
