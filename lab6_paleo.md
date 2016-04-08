@@ -1,5 +1,7 @@
 #Lab Exercise Six
 
+> Nicely formatted, nice poem. 18/20
+
 ##Problem Set 1
 1) 
 ```
@@ -90,3 +92,5 @@ Chancellor    Marjum Limestone    Weymouth Fm    Harkless Fm
 ```
 
 3) The Marjum formation in the House Range of Utah contains exceptional trilobite and echinoderm fossils as well as worms and other soft bodied organisms in certain shale beds, reminiscent of the level of preservation at the Burgess Shale. It is the only one that I could find that was referred to as Lagerstätten.
+
+> Yeah, this one was a difficult question, but the Chancellor Group contains the Burgess Shale! -2 Points, half credit.
