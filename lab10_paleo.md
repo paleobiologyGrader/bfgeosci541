@@ -17,7 +17,7 @@
 
 2) Relavency didn't play that big of a role in her review, so I am assuming there were no qualms with it.
 
-3)
+3) 
 
 4)
 
@@ -38,11 +38,11 @@
 6)
 
 ###Part two
-1) Again, it was suggested I make it a little clearer. But other than that, nothing else.
+1) It was suggested I make it a little clearer, just as with Leema. But other than that, nothing else.
 
-2)
+2) Again, she seemed to be implicitly okay with the relavency as it was not really mentioned.
 
-3)
+3) She suggested I develop an actual plan for analysis, as I only really mentioned how to put the data together. And as to the data construction itself she thought it would be relavent to the proposed project. She also suggested I put more justification in as to why MATLAB should be used, but I feel that anyone remotely familiar with R will know that it isn't conducive to calculus. 
 
 4)
 
