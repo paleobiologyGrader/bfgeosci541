@@ -2,9 +2,9 @@
 ###Part one
 1) I feel that it was both sufficiently long and demonstrated a genuine effort on her part for the purposes of the peer review. More research could have 
 
-2) Stellar Sea lions...
+2) Using correlation to isotopic ratios (as an environmental proxy), Stellar sea lion geographic range fluctuation can be predicted. 
 
-3)
+3) I believe similar methods for looking at the effects of environment have been employed, but not on Stellar sea lions in particular. So yes, I believe it is relavent, novel, testable and coherent.
 
 4) For the most part, the only thing that needed significant improvement was the justification section and addition to it. Smaller things might include more sources and additional work on the methods. 
 
