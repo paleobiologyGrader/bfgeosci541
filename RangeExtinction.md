@@ -3,10 +3,10 @@
 #####Written by Bryce Fenlon
 
 ##Summary
-Many studies of the fossil record have revolved around the mechanistic processes underlying extinction. Determining causal relationships, however, has been extremely difficult. And most have looked specifically at mass extinction events. Here, Payne and Finnegan look at geographic range and its effect on survivorship regimes between mass and background extinctions.
+Many studies of the fossil record have revolved around the mechanistic processes underlying extinction, and it has been shown that the causes of extinction are often context specific. Determining causal relationships, however, has been extremely difficult. And most have looked specifically at mass extinction events. Here, Payne and Finnegan look at geographic range and its effect on survivorship regimes between mass and background extinctions. In order to test this proposed relationship, the researchers did a few different things. The first methodology employed was the creation of log-odds for genus survivorship to geographic range within each of the 47 intervals under study. Using single regression, 44 showed a significant relationship between the two. By utilizing multiple regression to mitigate the effects of both species richness and the number of global occurrences, they found that neither has as great of an impact on extinction risk as geographic range. 
 
 logistic regression because binary, not continuous --> odds ratio (log-odds; odds of an outcome and its explanatory variable) --> 0 = absence of association; greater than or less than zero = positive/inverse associations between outcome and explanatory variable.
-  - Odds ratio = p/(1-p):geographic range...what is the measure of geographic range?
+  - Odds ratio = p/(1-p):geographic range...what is the measure of geographic range? number of named geological formations in which the genus occurred?
 
 geographic range positively correlated with survivorship throughout fossil record (significantly in 44 of 47 examined intervals)
 
@@ -28,7 +28,7 @@ only the number of tectonic plates was both significant at the traditional alpha
     - excluding the intervals previous to and after the end Cretaceous, as well as the end Cretaceous itself, explanation of variance decreases to 6%
     - should show an inverse relationship between sampled plates and geographic range selectivity, because narrow range distributions should display last occurrences when sampling quality decreases into the subsequent interval
 
-
+weak inverse relationship between extinction intensity and odds ratios 
 
 
 
