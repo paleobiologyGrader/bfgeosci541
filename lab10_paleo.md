@@ -15,7 +15,7 @@
 ###Part two
 1) She understood it, but two of her points were (1) that I should make the hypothesis more explicit and (2) incorporate habitat fragmentation (mentioned in the justification/research plan) into it. Although I saw the need to do the second, I instead pulled it out of the proposal because Val also mentioned being thrown by the addition of it. It seems to flow better without it. With regard to (1), I did change it to an explicit 'I hypothesize' statement for clarity.
 
-2)
+2) Relavency didn't play that big of a role in her review, so I am assuming there were no qualms with it.
 
 3)
 
@@ -38,7 +38,7 @@
 6)
 
 ###Part two
-1)
+1) Again, it was suggested I make it a little clearer. But other than that, nothing else.
 
 2)
 
