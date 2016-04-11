@@ -2,18 +2,18 @@
 ###Part one
 1) I feel that it was both sufficiently long and demonstrated a genuine effort on her part for the purposes of the peer review.
 
-2) 
+2) Stellar Sea lions...
 
 3)
 
 4) For the most part, the only thing that needed significant improvement was the justification section and addition to it. Smaller things might include more sources and additional work on the methods. 
 
-5) 
+5) The idea was clearly stated, but it did need more extensive elaboration. 
 
-6)
+6) Only four sources were used if I remember correctly. So more than just increased incorporation within the text, she will need to do more extensive research.
 
 ###Part two
-1)
+1) She understood it, but two of her points were (1) that I should make the hypothesis more explicit and (2) incorporate habitat fragmentation (mentioned in the justification/research plan) into it. Although I saw the need to do the second, I instead pulled it out of the proposal because Val also mentioned being thrown by the addition of it. It seems to flow better without it. With regard to (1), I did change it to an explicit 'I hypothesize' statement for clarity.
 
 2)
 
@@ -33,7 +33,7 @@
 
 4) I noticed that the citations were not present in the text (although they were not absent from the draft), and that the research plan was lacking specific methodology. Also, similar to Leema, I felt that more sources could have been found in general.
 
-5) I suggested th
+5) I suggested that she focus on one clade of migratory species, such as birds, instead of three separate ones.
 
 6)
 
