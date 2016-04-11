@@ -17,11 +17,11 @@
 
 2) Relavency didn't play that big of a role in her review, so I am assuming there were no qualms with it.
 
-3) 
+3) For the most part the analysis is not statistical and she said that it kind of went over her head. For vector fields in this context, flux and circulation are probably among the most appropriate methods to use. 
 
-4)
+4) She did a good job. Perhaps more criticism in the future, but I did receive some helpful tips on what to incorporate and how to do so.
 
-5)
+5) In general, I feel that I need to make the whole thing flow together more. Some of the ideas emerged later and should have been mentioned earlier than they were, as well as connecting back to the hypothesis at the end. 
 
 #Kim
 ###Part one
@@ -35,7 +35,7 @@
 
 5) I suggested that she focus on one clade of migratory species, such as birds, instead of three separate ones.
 
-6)
+6) The only additional research that might have been needed was an investigation into magnetic flip durations and whether or not additional field work would be required. 
 
 ###Part two
 1) It was suggested I make it a little clearer, just as with Leema. But other than that, nothing else.
@@ -44,6 +44,6 @@
 
 3) She suggested I develop an actual plan for analysis, as I only really mentioned how to put the data together. And as to the data construction itself she thought it would be relavent to the proposed project. She also suggested I put more justification in as to why MATLAB should be used, but I feel that anyone remotely familiar with R will know that it isn't conducive to calculus. 
 
-4)
+4) Yes, I feel the review was adequate. Some of the same points were brought up, but also some more specific details that both I and Leema missed.
 
-5)
+5) Pretty much the same message came across in this one. I need to connect my justification and hypothesis better, and in general improve the thought flow. 
