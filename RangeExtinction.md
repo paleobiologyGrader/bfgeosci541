@@ -3,7 +3,10 @@
 #####Written by Bryce Fenlon
 
 ##Summary
+Many studies of the fossil record have revolved around the mechanistic processes underlying extinction. Determining causal relationships, however, has been extremely difficult. And most have looked specifically at mass extinction events. Here, Payne and Finnegan look at geographic range and its effect on survivorship regimes between mass and background extinctions.
+
 logistic regression because binary, not continuous --> odds ratio (log-odds; odds of an outcome and its explanatory variable) --> 0 = absence of association; greater than or less than zero = positive/inverse associations between outcome and explanatory variable.
+  - Odds ratio = p/(1-p):geographic range...what is the measure of geographic range?
 
 geographic range positively correlated with survivorship throughout fossil record (significantly in 44 of 47 examined intervals)
 
@@ -13,3 +16,21 @@ multiple logistic regression in order to determine effect of geographic range on
 
 Because the researchers investigated different extinction risks amongst varying range sizes *within* 10 Myr intervals, instead of *between* them, sampling heterogeneities play less of a role.
   - Genera in well sampled intervals tend to have larger absolute ranges than less well sampled intervals
+  - Did look into how it affected geographic range selectivity by comparing odds ratios to five different variables in the fossil record
+    - total number of occurrences
+    - total number of tectonic plates
+    - contemporaneous global sea level
+    - proportion of "range through" genera (before and after an interval, but not in it; not considered in the initial analysis)
+
+only the number of tectonic plates was both significant at the traditional alpha value of 0.05 as well as explaining more than ten percent of the log-odds variation
+  - Reflects intense sampling in mass extinction intervals (late Triassic and end Cretaceous)
+    - each reflects both low selectivity and a low number of sampled plates, despite intensive sampling of these intervals
+    - excluding the intervals previous to and after the end Cretaceous, as well as the end Cretaceous itself, explanation of variance decreases to 6%
+    - should show an inverse relationship between sampled plates and geographic range selectivity, because narrow range distributions should display last occurrences when sampling quality decreases into the subsequent interval
+
+
+
+
+
+
+
