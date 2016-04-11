@@ -1,6 +1,6 @@
 #Leema
 ###Part one
-1) I feel that it was both sufficiently long and demonstrated a genuine effort on her part for the purposes of the peer review.
+1) I feel that it was both sufficiently long and demonstrated a genuine effort on her part for the purposes of the peer review. More research could have 
 
 2) Stellar Sea lions...
 
@@ -25,7 +25,7 @@
 
 #Kim
 ###Part one
-1) 
+1) All the parts were there and the idea was clearly presented. As a rough, rough draft, however, it could always stand to improve. The only thing that seemed to be particularly lacking was in text citation. 
 
 2) Her hypothesis was that relatively short magnetic pole switches adversely affected migratory species.
 
