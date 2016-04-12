@@ -11,14 +11,8 @@ Output[i] <- nrow(MacStrat %>% filter(t_age>=Periods$t_age[i], b_age<=Periods$b_
 return(Output)
 }
 
-macroSort(MacStrat, Periods)
-   Quaternary       Neogene     Paleogene    Cretaceous      Jurassic      Triassic       Permian Carboniferous      Devonian  
-         3750          3339          3790          4588           998           604           903          3020          2059 
-   Silurian    Ordovician     
-       1205          2161 
-   Cambrian     Ediacaran    Cryogenian        Tonian       Stenian      Ectasian     Calymmian    Statherian     Orosirian    
-       1518           154            75            55            46            39           109            38            87 
-   Rhyacian      Siderian       
-         43             9 
+macroSort(MacStrat, Periods)[4:11]
+   Cretaceous      Jurassic      Triassic       Permian Carboniferous      Devonian      Silurian    Ordovician 
+         4588           998           604           903          3020          2059          1205          2161
 
 ```
