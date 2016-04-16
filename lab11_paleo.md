@@ -1,5 +1,6 @@
 #Triassic and Jurassic Macrostratigraphy
-##Problem set one
+##Part one
+###Problem set one
 1)
 ```
 TriassicUnits <- read.csv("https://macrostrat.org/api/units?interval_name=Triassic&format=csv&response=long")
@@ -19,7 +20,7 @@ TriassicUnits$lith[1:10]
 
 5) While all 10 units started in the Triassic, every one of them also ranges beyond the Triassic to the Cretaceous.
 
-##Problem set two
+###Problem set two
 1) 713 units were downloaded this time.
 ```
 TriassicUnits <- read.csv("https://macrostrat.org/api/units?interval_name=Triassic&format=csv&lith_class=sedimentary")
@@ -66,6 +67,24 @@ sd(UnitFreqs[-3])
 
 6) Considering the fact that most data on a distribution falls within two standard deviations of the mean, I would have to say that the Triassic does not have a statistically lower number of units than the others included in the sample.
 
+7) Even when considering both the Jurassic and Triassic as outliers, the result is similar. In this case the mean is shifted to a higher value, but so is the standard deviation. This time the Triassic lies 1.28 standard deviations away from the mean. And again, based on this value I cannot be certain (statistically) that the Triassic has a lower number of units than the other periods.
+```
+mean(UnitFreqs[c(-2,-3)])
+[1] 2322.667
+sd(UnitFreqs[c(-2,-3)])
+[1] 1340.022
+(2322.667-604)/1340.022
+[1] 1.282566
+```
 
+##Part two
+###Problem set three
+1)
+```
+URL <- "https://macrostrat.org/api/columns?format=geojson_bare&project_id=1"
+GotURL <- getURL(URL)
+AllMap <- readOGR(GotURL, "OGRGeoJSON", verbose=FALSE)
+plot(AllMap)
+```
 
-
+2)
