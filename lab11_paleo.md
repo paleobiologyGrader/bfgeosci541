@@ -88,3 +88,27 @@ plot(AllMap)
 ```
 
 2)
+```
+URL <- "https://macrostrat.org/api/columns?format=geojson_bare&age_top=242&age_bottom=252&project_id=1"
+GotURL <- getURL(URL)
+Induan <- readOGR(GotURL, "OGRGeoJSON", verbose=FALSE)
+plot(Induan, add=TRUE, col="#B051A5")
+```
+
+3)
+```
+InAnimal <- downloadPBDB("Animalia", StartInterval="Induan", StopInterval="Anisian")
+points(InAnimal$lng, InAnimal$lat, pch=20, col="red")
+```
+
+4)
+```
+LoAnimal <- downloadPBDB("Animalia", StartInterval="Lopingian", StopInterval="Lopingian")
+URL <- "https://macrostrat.org/api/columns?format=geojson_bare&age_top=252&age_bottom=260&project_id=1"
+GotURL <- getURL(URL)
+Loping <- readOGR(GotURL, "OGRGeoJSON", verbose=FALSE)
+windows()
+plot(AllMap)
+plot(Loping, add=TRUE, col="#FBA794")
+points(LoAnimal$lng, LoAnimal$lat, pch=20)
+```
