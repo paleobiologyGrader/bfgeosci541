@@ -103,12 +103,19 @@ points(InAnimal$lng, InAnimal$lat, pch=20, col="red")
 
 4)
 ```
-LoAnimal <- downloadPBDB("Animalia", StartInterval="Lopingian", StopInterval="Lopingian")
 URL <- "https://macrostrat.org/api/columns?format=geojson_bare&age_top=252&age_bottom=260&project_id=1"
 GotURL <- getURL(URL)
 Loping <- readOGR(GotURL, "OGRGeoJSON", verbose=FALSE)
 windows()
 plot(AllMap)
 plot(Loping, add=TRUE, col="#FBA794")
+```
+
+5)
+```
+LoAnimal <- downloadPBDB("Animalia", StartInterval="Lopingian", StopInterval="Lopingian")
 points(LoAnimal$lng, LoAnimal$lat, pch=20)
 ```
+
+6) While there was a drop between the Lopingian and the Induan-Anisian in the amount of sedimentary units, the Induan-Anisian sediments show a large increase in the percentage of sedimentary units with reported fossils in them.
+
