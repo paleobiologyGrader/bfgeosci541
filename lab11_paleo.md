@@ -51,7 +51,6 @@ UnitFreqs <- macroSort(MacStrat, Periods)[4:11]
 UnitFreqs
    Cretaceous      Jurassic      Triassic       Permian Carboniferous      Devonian      Silurian    Ordovician 
          4588           998           604           903          3020          2059          1205          2161
-
 ```
 
 5) The number of Triassic units lies about 1.15 standard deviations away from the mean.
