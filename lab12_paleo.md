@@ -77,7 +77,7 @@ TriassicLat <- tapply(Triassic[,"paleolat"], Triassic[,"genus"], mean)
 3)
 ```
 TriassicSurvivors <- subset(Triassic, Triassic[,"genus"]%in%unique(PostTriassic[,"genus"])==TRUE)
-TriassicSurvivors <- unique(Triassic[,"genus"])
+TriassicSurvivors <- unique(TriassicSurvivors[,"genus"])
 TriassicVictims <- subset(Triassic, Triassic[,"genus"]%in%unique(PostTriassic[,"genus"])!=TRUE)
 TriassicVictims <- unique(TriassicVictims[,"genus"])
 ```
