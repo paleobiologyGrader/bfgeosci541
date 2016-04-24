@@ -92,38 +92,38 @@ TriassicSyn <- subset(Triassic, Triassic[,"genus"]%in%TriassicSynapsids[,"genus"
 TriassicDi <- subset(Triassic, Triassic[,"genus"]%in%TriassicDiapsids[,"genus"]==TRUE)
 ```
 
-5) Because the estimate for the slope is 0.00006373, and also because that row does not have a significance code, I conclude that genus survival across the Triassic/Jurassic boundary cannot be predicted by its mean latitude.
+5) Because the estimate for the slope is 0.0007725, and also because that row does not have a significance code, I conclude that genus survival across the Triassic/Jurassic boundary cannot be predicted by its mean latitude.
 ```
 TJVictims <- array(0, dim=length(TriassicVictims), dimnames=list(TriassicVictims))
 FinalMatrix <- merge(TriassicLat, TJVictims, all=TRUE, by="row.names")
 FinalMatrix <- transform(FinalMatrix, row.names=Row.names, Row.names=NULL)
 colnames(FinalMatrix) <- c("MeanLatitudes", "Survivor/Victim")
 FinalMatrix[is.na(FinalMatrix[,"Survivor/Victim"]),] <- 1
-Regression <- glm(FinalMatrix[,"Survivor/Victim"] ~ FinalMatrix[,"MeanLatitudes"])
+Regression <- glm(FinalMatrix[,"Survivor/Victim"] ~ FinalMatrix[,"MeanLatitudes"], family="binomial")
 summary(Regression)
 
 Call:
 glm(formula = FinalMatrix[, "Survivor/Victim"] ~ FinalMatrix[, 
-    "MeanLatitudes"])
+    "MeanLatitudes"], family = "binomial")
 
 Deviance Residuals: 
-     Min        1Q    Median        3Q       Max  
--0.09518  -0.09272  -0.09170  -0.08860   0.90887  
+    Min       1Q   Median       3Q      Max  
+-0.4474  -0.4411  -0.4385  -0.4308   2.1889  
 
 Coefficients:
-                                Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                    9.107e-02  1.283e-02   7.098 4.34e-12 ***
-FinalMatrix[, "MeanLatitudes"] 6.373e-05  4.261e-04   0.150    0.881    
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                    -2.3009122  0.1547326  -14.87   <2e-16 ***
+FinalMatrix[, "MeanLatitudes"]  0.0007725  0.0051555    0.15    0.881    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-(Dispersion parameter for gaussian family taken to be 0.08311738)
+(Dispersion parameter for binomial family taken to be 1)
 
-    Null deviance: 41.810  on 504  degrees of freedom
-Residual deviance: 41.808  on 503  degrees of freedom
-AIC: 180.94
+    Null deviance: 308.10  on 504  degrees of freedom
+Residual deviance: 308.08  on 503  degrees of freedom
+AIC: 312.08
 
-Number of Fisher Scoring iterations: 2
+Number of Fisher Scoring iterations: 5
 ```
 
 Extra Credit
