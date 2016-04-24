@@ -59,3 +59,36 @@ LowerLimit <- log(OddsRatio) - (1.96*StandardError)
 LowerLimit
 [1] -0.5370353
 ```
+
+##Problem set two
+1)
+```
+Triassic <- downloadPBDB(c("Diapsida", "Synapsida"), "Anisian", "Rhaetian")
+Triassic <- cleanRank(Triassic, "genus")
+PostTriassic <- downloadPBDB(c("Diapsida", "Synapsida"), "Jurassic", "Neogene")
+PostTriassic <- cleanRank(PostTriassic, "genus")
+```
+
+2)
+```
+TriassicLat <- tapply(Triassic[,"paleolat"], Triassic[,"genus"], mean)
+```
+
+3)
+```
+TriassicSurvivors <- subset(Triassic, Triassic[,"genus"]%in%unique(PostTriassic[,"genus"])==TRUE)
+TriassicSurvivors <- unique(Triassic[,"genus"])
+TriassicVictims <- subset(Triassic, Triassic[,"genus"]%in%unique(PostTriassic[,"genus"])!=TRUE)
+TriassicVictims <- unique(TriassicVictims[,"genus"])
+```
+
+4)
+```
+TriassicSyn <- subset(Triassic, Triassic[,"genus"]%in%TriassicSynapsids[,"genus"]==TRUE)
+TriassicDi <- subset(Triassic, Triassic[,"genus"]%in%TriassicDiapsids[,"genus"]==TRUE)
+```
+
+
+
+
+
