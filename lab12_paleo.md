@@ -78,8 +78,12 @@ TriassicLat <- tapply(Triassic[,"paleolat"], Triassic[,"genus"], mean)
 ```
 TriassicSurvivors <- subset(Triassic, Triassic[,"genus"]%in%unique(PostTriassic[,"genus"])==TRUE)
 TriassicSurvivors <- unique(TriassicSurvivors[,"genus"])
+str(TriassicSurvivors)
+chr [1:46] "Clevosaurus" "Grallator" "Rhynchosauroides" ...
 TriassicVictims <- subset(Triassic, Triassic[,"genus"]%in%unique(PostTriassic[,"genus"])!=TRUE)
 TriassicVictims <- unique(TriassicVictims[,"genus"])
+str(TriassicVictims)
+chr [1:459] "Icarosaurus" "Rutiodon" "Kuehneosuchus" "Kuehneosaurus" ...
 ```
 
 4)
@@ -88,7 +92,40 @@ TriassicSyn <- subset(Triassic, Triassic[,"genus"]%in%TriassicSynapsids[,"genus"
 TriassicDi <- subset(Triassic, Triassic[,"genus"]%in%TriassicDiapsids[,"genus"]==TRUE)
 ```
 
+5) Because the estimate for the slope is 0.00006373, and also because that row does not have a significance code, I conclude that genus survival across the Triassic/Jurassic boundary cannot be predicted by its mean latitude.
+```
+TJVictims <- array(0, dim=length(TriassicVictims), dimnames=list(TriassicVictims))
+FinalMatrix <- merge(TriassicLat, TJVictims, all=TRUE, by="row.names")
+FinalMatrix <- transform(FinalMatrix, row.names=Row.names, Row.names=NULL)
+colnames(FinalMatrix) <- c("MeanLatitudes", "Survivor/Victim")
+FinalMatrix[is.na(FinalMatrix[,"Survivor/Victim"]),] <- 1
+Regression <- glm(FinalMatrix[,"Survivor/Victim"] ~ FinalMatrix[,"MeanLatitudes"])
+summary(Regression)
 
+Call:
+glm(formula = FinalMatrix[, "Survivor/Victim"] ~ FinalMatrix[, 
+    "MeanLatitudes"])
 
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.09518  -0.09272  -0.09170  -0.08860   0.90887  
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    9.107e-02  1.283e-02   7.098 4.34e-12 ***
+FinalMatrix[, "MeanLatitudes"] 6.373e-05  4.261e-04   0.150    0.881    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for gaussian family taken to be 0.08311738)
+
+    Null deviance: 41.810  on 504  degrees of freedom
+Residual deviance: 41.808  on 503  degrees of freedom
+AIC: 180.94
+
+Number of Fisher Scoring iterations: 2
+```
+
+Extra Credit
 
 
