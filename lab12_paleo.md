@@ -98,7 +98,7 @@ str(TriassicDi)
 chr [1:389] "Icarosaurus" "Rutiodon" "Kuehneosuchus" "Kuehneosaurus" ...
 ```
 
-5) Because the estimate is 0.0007725, and also because that row does not have a significance code, I conclude that genus survival across the Triassic/Jurassic boundary cannot be predicted by its mean latitude. Also, the z-value is indicative of distance from the mean, which would imply that it is not significantly far from the
+5) Because the estimate is 0.0007725, and also because that row does not have a significance code, I conclude that genus survival across the Triassic/Jurassic boundary cannot be predicted by its mean latitude. Also, the z-value is indicative of distance from the mean, which would imply that it is not significantly far from the mean latitude across the T/J.
 ```R
 TJVictims <- array(0, dim=length(TriassicVictims), dimnames=list(TriassicVictims))
 FinalMatrix <- merge(TriassicLat, TJVictims, all=TRUE, by="row.names")
