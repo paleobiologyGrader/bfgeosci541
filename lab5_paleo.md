@@ -35,17 +35,17 @@ sum(BivalvePresence["Miocene",])
 4)
 
 ````R
-> erebus <- function(x,interval) {
-> a <- x[interval,]
-> b <- a[a != 0]
-> c <- sum(b)
-> d <- b/c
-> e <- d*log(d)
-> f <- -sum(e)
-> return(f)
-> }
-> erebus(BivalveAbundance, "Late Cretaceous")
-> [1] 5.086654
+erebus <- function(x,interval) {
+a <- x[interval,]
+b <- a[a != 0]
+c <- sum(b)
+d <- b/c
+e <- d*log(d)
+f <- -sum(e)
+return(f)
+}
+erebus(BivalveAbundance, "Late Cretaceous")
+[1] 5.086654
 ````
 
 5) 
