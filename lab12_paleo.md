@@ -1,7 +1,7 @@
 #Selectivity patterns of mass extinctions
 ##Problem set one
 1)
-```
+```R
 TriassicSynapsids <- downloadPBDB("Synapsida", StartInterval="Anisian", StopInterval="Rhaetian")
 TriassicSynapsids <- cleanRank(TriassicSynapsids, "genus")
 TriassicDiapsids <- downloadPBDB("Diapsida", StartInterval="Anisian", StopInterval="Rhaetian")
@@ -13,7 +13,7 @@ PTDiapsids <- cleanRank(PTDiapsids, "genus")
 ```
 
 2) 389 Triassic Diapsid and 116 Synapsid genera are present.
-```
+```R
 length(unique(TriassicDiapsids$genus))
 [1] 389
 length(unique(TriassicSynapsids$genus))
@@ -21,7 +21,7 @@ length(unique(TriassicSynapsids$genus))
 ```
 
 3)
-```
+```R
 DiapsidSurvivors <- intersect(unique(TriassicDiapsids[,"genus"]), unique(PTDiapsids[,"genus"]))
 length(DiapsidSurvivors)
 [1] 37
@@ -37,7 +37,7 @@ length(SynapsidVictims)
 ```
 
 4)
-```
+```R
 SynapsidGenera <- unique(TriassicSynapsids$genus)
 DiapsidGenera <- unique(TriassicDiapsids$genus)
 SynapsidOdds <- (length(SynapsidSurvivors)/length(SynapsidGenera))/(length(SynapsidVictims)/length(SynapsidGenera))
@@ -50,7 +50,7 @@ log(OddsRatio)
 ```
 
 5) Because the lower limit is negative, we cannot be certain Diapsids had a statistically significant advantage in survival over Synapsids across the Triassic/Jurassic transition.
-```
+```R
 StandardError <- sqrt(1/length(SynapsidSurvivors) + 1/length(SynapsidVictims) + 1/length(DiapsidSurvivors) + 1/length(DiapsidVictims))
 UpperLimit <- log(OddsRatio) + (1.96*StandardError)
 UpperLimit
@@ -62,7 +62,7 @@ LowerLimit
 
 ##Problem set two
 1)
-```
+```R
 Triassic <- downloadPBDB(c("Diapsida", "Synapsida"), "Anisian", "Rhaetian")
 Triassic <- cleanRank(Triassic, "genus")
 PostTriassic <- downloadPBDB(c("Diapsida", "Synapsida"), "Jurassic", "Neogene")
@@ -70,12 +70,12 @@ PostTriassic <- cleanRank(PostTriassic, "genus")
 ```
 
 2)
-```
+```R
 TriassicLat <- tapply(Triassic[,"paleolat"], Triassic[,"genus"], mean)
 ```
 
 3)
-```
+```R
 TriassicSurvivors <- subset(Triassic, Triassic[,"genus"]%in%unique(PostTriassic[,"genus"])==TRUE)
 TriassicSurvivors <- unique(TriassicSurvivors[,"genus"])
 str(TriassicSurvivors)
@@ -87,7 +87,7 @@ chr [1:459] "Icarosaurus" "Rutiodon" "Kuehneosuchus" "Kuehneosaurus" ...
 ```
 
 4) These objects (```TriassicSyn``` and ```TriassicDi```) will return lists of the unique Triassic Synapsids and Diapsids, respectively.
-```
+```R
 TriassicSyn <- subset(Triassic, Triassic[,"genus"]%in%TriassicSynapsids[,"genus"]==TRUE)
 TriassicSyn <- unique(TriassicSyn$genus)
 str(TriassicSyn)
@@ -99,7 +99,7 @@ chr [1:389] "Icarosaurus" "Rutiodon" "Kuehneosuchus" "Kuehneosaurus" ...
 ```
 
 5) Because the estimate is 0.0007725, and also because that row does not have a significance code, I conclude that genus survival across the Triassic/Jurassic boundary cannot be predicted by its mean latitude.
-```
+```R
 TJVictims <- array(0, dim=length(TriassicVictims), dimnames=list(TriassicVictims))
 FinalMatrix <- merge(TriassicLat, TJVictims, all=TRUE, by="row.names")
 FinalMatrix <- transform(FinalMatrix, row.names=Row.names, Row.names=NULL)
@@ -133,7 +133,7 @@ Number of Fisher Scoring iterations: 5
 ```
 
 Extra Credit: Again the result is not significant. Whether the genus was a Synapsid or a Diapsid held no sway over survival across the T/J boundary. And looking at the AIC difference between the two, I would hypothesize that the simpler linear regression explains more of the data. 
-```
+```R
 Di <- array(0, dim=length(TriassicDi), dimnames=list(TriassicDi)
 FinalMatrix1 <- merge(TriassicLat, TJVictims, all=TRUE, by="row.names")
 FinalMatrix2 <- merge(TriassicLat, Di, all=TRUE, by="row.names")
