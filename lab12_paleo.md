@@ -86,13 +86,19 @@ str(TriassicVictims)
 chr [1:459] "Icarosaurus" "Rutiodon" "Kuehneosuchus" "Kuehneosaurus" ...
 ```
 
-4)
+4) These objects (```TriassicSyn``` and ```TriassicDi```) will return lists of the unique Triassic Synapsids and Diapsids, respectively.
 ```
 TriassicSyn <- subset(Triassic, Triassic[,"genus"]%in%TriassicSynapsids[,"genus"]==TRUE)
+TriassicSyn <- unique(TriassicSyn$genus)
+str(TriassicSyn)
+chr [1:116] "Therioherpeton" "Adelobasileus" "Massetognathus" ...
 TriassicDi <- subset(Triassic, Triassic[,"genus"]%in%TriassicDiapsids[,"genus"]==TRUE)
+TriassicDi <- unique(TriassicDi$genus)
+str(TriassicDi)
+chr [1:389] "Icarosaurus" "Rutiodon" "Kuehneosuchus" "Kuehneosaurus" ...
 ```
 
-5) Because the estimate for the slope is 0.0007725, and also because that row does not have a significance code, I conclude that genus survival across the Triassic/Jurassic boundary cannot be predicted by its mean latitude.
+5) Because the estimate is 0.0007725, and also because that row does not have a significance code, I conclude that genus survival across the Triassic/Jurassic boundary cannot be predicted by its mean latitude.
 ```
 TJVictims <- array(0, dim=length(TriassicVictims), dimnames=list(TriassicVictims))
 FinalMatrix <- merge(TriassicLat, TJVictims, all=TRUE, by="row.names")
@@ -126,6 +132,45 @@ AIC: 312.08
 Number of Fisher Scoring iterations: 5
 ```
 
-Extra Credit
+Extra Credit: Again the result is not significant. Whether the genus was a Synapsid or a Diapsid held no sway over survival across the T/J boundary. And looking at the AIC difference between the two, I would hypothesize that the simpler linear regression explains more of the data. 
+```
+Di <- array(0, dim=length(TriassicDi), dimnames=list(TriassicDi)
+FinalMatrix1 <- merge(TriassicLat, TJVictims, all=TRUE, by="row.names")
+FinalMatrix2 <- merge(TriassicLat, Di, all=TRUE, by="row.names")
+FinalMatrix1 <- transform(FinalMatrix1, row.names=Row.names, Row.names=NULL)
+FinalMatrix2 <- transform(FinalMatrix2, row.names=Row.names, Row.names=NULL)
+colnames(FinalMatrix1) <- c("MeanLatitudes", "Survivor/Victim")
+colnames(FinalMatrix2) <- c("MeanLatitudes", "Synapsid/Diapsid")
+FinalMatrix1[is.na(FinalMatrix1[,"Survivor/Victim"]),] <- 1
+FinalMatrix2[is.na(FinalMatrix2[,"Synapsid/Diapsid"]),] <- 1
+FinalMatrix <- merge(FinalMatrix1, FinalMatrix2, all=TRUE, by="row.names")
+FinalMatrix <- transform(FinalMatrix, row.names=Row.names, Row.names=NULL)
+colnames(FinalMatrix) <- c("MeanLatitudes", "Survivor/Victim", "Synapsid/Diapsid")
+MRegression <- glm(FinalMatrix[,"Survivor/Victim"] ~ FinalMatrix[,"MeanLatitudes"] + FinalMatrix[,"Synapsid/Diapsid"], family="binomial")
+summary(MRegression)
 
+Call:
+glm(formula = FinalMatrix[, "Survivor/Victim"] ~ FinalMatrix[, 
+    "MeanLatitudes"] + FinalMatrix[, "Synapsid/Diapsid"], family = "binomial")
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.4492  -0.4477  -0.4466  -0.4029   2.2603  
+
+Coefficients:
+                                    Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                       -2.2533359  0.1740487 -12.947   <2e-16 ***
+FinalMatrix[, "MeanLatitudes"]     0.0001619  0.0052887   0.031    0.976    
+FinalMatrix[, "Synapsid/Diapsid"] -0.2204787  0.3956189  -0.557    0.577    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 308.10  on 504  degrees of freedom
+Residual deviance: 307.76  on 502  degrees of freedom
+AIC: 313.76
+
+Number of Fisher Scoring iterations: 5
+```
 
