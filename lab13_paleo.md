@@ -167,18 +167,87 @@ PaleogeneMatrix <- abundanceMatrix(EarlyPaleogene, SampleDefinition="unit_name",
 2) 
 Gamma
 ```R
-exp(diversity(colSums(PermianMatrix), index="shannon", base=exp(1)))
+exp(diversity(colSums(OrdovicianMatrix), index="shannon"))
+[1] 100.5137
+exp(diversity(colSums(SilurianMatrix), index="shannon"))
+[1] 273.3235
+exp(diversity(colSums(PermianMatrix), index="shannon"))
 [1] 210.0769
+exp(diversity(colSums(TriassicMatrix), index="shannon"))
+[1] 204.4873
+exp(diversity(colSums(CretaceousMatrix), index="shannon"))
+[1] 378.3011
+exp(diversity(colSums(PaleogeneMatrix), index="shannon"))
+[1] 517.0753
 ```
 Alpha
 ```R
-mean(diversity(PermianMatrix, index="shannon", base=exp(1)))
-[1] 2.232009
+exp(mean(diversity(OrdovicianMatrix, index="shannon")))
+[1] 10.96187
+exp(mean(diversity(SilurianMatrix, index="shannon")))
+[1] 10.89307
+exp(mean(diversity(PermianMatrix, index="shannon")))
+[1] 9.318572
+exp(mean(diversity(TriassicMatrix, index="shannon")))
+[1] 9.198214
+exp(mean(diversity(CretaceousMatrix, index="shannon")))
+[1] 7.69611
+exp(mean(diversity(PaleogeneMatrix, index="shannon")))
+[1] 13.97237
 ```
 Beta
 ```R
-diversity(colSums(PermianMatrix), index="shannon", base=exp(1))-mean(diversity(PermianMatrix), index="shannon", base=exp(1))
-[1] 3.115464
+exp(diversity(colSums(OrdovicianMatrix), index="shannon"))-exp(mean(diversity(OrdovicianMatrix, index="shannon")))
+[1] 89.55187
+exp(diversity(colSums(SilurianMatrix), index="shannon"))-exp(mean(diversity(SilurianMatrix, index="shannon")))
+[1] 262.4305
+exp(diversity(colSums(PermianMatrix), index="shannon"))-exp(mean(diversity(PermianMatrix, index="shannon")))
+[1] 200.7583
+exp(diversity(colSums(TriassicMatrix), index="shannon"))-exp(mean(diversity(TriassicMatrix, index="shannon")))
+[1] 195.2891
+exp(diversity(colSums(CretaceousMatrix), index="shannon"))-exp(mean(diversity(CretaceousMatrix, index="shannon")))
+[1] 370.605
+exp(diversity(colSums(PaleogeneMatrix), index="shannon"))-exp(mean(diversity(PaleogeneMatrix, index="shannon")))
+[1] 503.1029
 ```
 
-3)
+3) All values for gamma diversity will be equal to one for the purposes of this question.
+
+Alpha
+```R
+exp(mean(diversity(OrdovicianMatrix, index="shannon")))/exp(diversity(colSums(OrdovicianMatrix), index="shannon"))
+[1] 0.1090584
+exp(mean(diversity(SilurianMatrix, index="shannon")))/exp(diversity(colSums(SilurianMatrix), index="shannon"))
+[1] 0.03985414
+exp(mean(diversity(PermianMatrix, index="shannon")))/exp(diversity(colSums(PermianMatrix), index="shannon"))
+[1] 0.04435791
+exp(mean(diversity(TriassicMatrix, index="shannon")))/exp(diversity(colSums(TriassicMatrix), index="shannon"))
+[1] 0.04498184
+exp(mean(diversity(CretaceousMatrix, index="shannon")))/exp(diversity(colSums(CretaceousMatrix), index="shannon"))
+[1] 0.02034387
+exp(mean(diversity(PaleogeneMatrix, index="shannon")))/exp(diversity(colSums(PaleogeneMatrix), index="shannon"))
+[1] 0.02702192
+```
+
+Beta
+```R
+(exp(diversity(colSums(OrdovicianMatrix), index="shannon"))-exp(mean(diversity(OrdovicianMatrix, index="shannon"))))/exp(diversity(colSums(OrdovicianMatrix), index="shannon"))
+[1] 0.8909416
+(exp(diversity(colSums(SilurianMatrix), index="shannon"))-exp(mean(diversity(SilurianMatrix, index="shannon"))))/exp(diversity(colSums(SilurianMatrix), index="shannon"))
+[1] 0.9601459
+(exp(diversity(colSums(PermianMatrix), index="shannon"))-exp(mean(diversity(PermianMatrix, index="shannon"))))/exp(diversity(colSums(PermianMatrix), index="shannon"))
+[1] 0.9556421
+(exp(diversity(colSums(TriassicMatrix), index="shannon"))-exp(mean(diversity(TriassicMatrix, index="shannon"))))/exp(diversity(colSums(TriassicMatrix), index="shannon"))
+[1] 0.9550182
+(exp(diversity(colSums(CretaceousMatrix), index="shannon"))-exp(mean(diversity(CretaceousMatrix, index="shannon"))))/exp(diversity(colSums(CretaceousMatrix), index="shannon"))
+[1] 0.9796561
+(exp(diversity(colSums(PaleogeneMatrix), index="shannon"))-exp(mean(diversity(PaleogeneMatrix, index="shannon"))))/exp(diversity(colSums(PaleogeneMatrix), index="shannon"))
+[1] 0.9729781
+```
+
+4) When not measured as a percentage, alpha diversity decreases after the End Ordovician and End Permian, but increases following the End Cretaceous extinction. I simply looked at the numbers from question 2 in this problem set, no code necessary.
+
+5) Using question 3 for this, alpha diversity increase is seen following the End Permian and End Cretaceous extinctions. However, using this method results in a substantial decrease in alpha diversity after the End Ordovician event.
+
+##Problem four
+From the above problem sets, I can find no definitive evidence that would lead to a conclusion of beta diversity increase or decrease following mass extinctions. I therefore have to conclude that beta diversity has other factors through which it is influenced, moreso than mass extinction events.
