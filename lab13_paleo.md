@@ -62,7 +62,7 @@ beta(SilurianMatrix)/gamma(SilurianMatrix)
 [1] 0.8988377
 ```
 
-6) Using percentages does mask the disparity between the original numbers, as well as hiding the magnitude of increase (or lack thereof) in the direct comparison. While ratios and other statistics have their usefulness, sometimes simple numbers work just as well.....????????
+6) Using percentages does mask the disparity between the original numbers, as well as hiding the magnitude of increase (or lack thereof) in the direct comparison. The absolute difference in diversity between the two intervals is also lost.
 
 ##Problem set two
 1)
