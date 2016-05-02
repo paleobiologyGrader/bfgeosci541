@@ -50,7 +50,7 @@ beta(SilurianMatrix)
 
 4) All diversity measures (alpha, beta, and gamma) increase from the Ordovician to the Silurian. Alpha increases from 26.6 to 42.7, beta from 184.3 to 380.2, and gamma from 211 to 423.
 
-5) When expressed as a percentage of gamma diversity, beta diversity still increases. However, it is a significantly smaller increase than the direct comparison. The higher beta diversity in the Silurian can be equated to higher faunal turnover between communities, therefore implying that Silurian faunal communities were less cosmopolitan than those from the Ordovician.
+5) When expressed as a percentage of gamma diversity, beta diversity still increases. However, it is a significantly smaller increase than the direct comparison. The higher beta diversity in the Silurian can be equated to higher faunal turnover between communities, therefore implying that Silurian faunal communities were less cosmopolitan than those from the Ordovician. There may be a tradeoff between alpha and beta diversity across such large landscapes, as alpha diversity decreased by a similar percentage (more in terms of proportion, however, than beta diversity). 
 ```R
 traditionalAlpha(OrdovicianMatrix)/gamma(OrdovicianMatrix)
 [1] 0.1260913
@@ -62,4 +62,38 @@ beta(SilurianMatrix)/gamma(SilurianMatrix)
 [1] 0.8988377
 ```
 
-6)
+6) Using percentages does mask the disparity between the original numbers, as well as hiding the magnitude of increase (or lack thereof) in the direct comparison. While ratios and other statistics have their usefulness, sometimes simple numbers work just as well.....????????
+
+##Problem set two
+1)
+```R
+LatePermian <- downloadPBDB("Animalia", StartInterval="Guadalupian", StopInterval="Lopingian")
+EarlyTriassic <- downloadPBDB("Animalia", StartInterval="Induan", StopInterval="Ladinian")
+LateCretaceous <- downloadPBDB("Animalia", StartInterval="Santonian", StopInterval="Maastrichtian")
+EarlyPaleogene <- downloadPBDB("Animalia", StartInterval="Danian", StopInterval="Lutetian")
+LatePermian <- cleanRank(LatePermian, "genus")
+EarlyTriassic <- cleanRank(EarlyTriassic, "genus")
+LateCretaceous <- cleanRank(LateCretaceous, "genus")
+EarlyPaleogene <- cleanRank(EarlyPaleogene, "genus")
+LatePermian <- constrainAges(LatePermian, Epochs)
+EarlyTriassic <- constrainAges(EarlyTriassic, Epochs)
+LateCretaceous <- constrainAges(LateCretaceous, Epochs)
+EarlyPaleogene <- constrainAges(EarlyPaleogene, Epochs)
+LatePermian <- macrostratMatch(LatePermian)
+EarlyTriassic <- macrostratMatch(EarlyTriassic)
+LateCretaceous <- macrostratMatch(LateCretaceous)
+EarlyPaleogene <- macrostratMatch(EarlyPaleogene)
+PermianMatrix <- abundanceMatrix(LatePermian, SampleDefinition="unit_name", TaxonRank="genus")
+TriassicMatrix <- abundanceMatrix(EarlyTriassic, SampleDefinition="unit_name", TaxonRank="genus")
+CretaceousMatrix <- abundanceMatrix(LateCretaceous, SampleDefinition="unit_name", TaxonRank="genus")
+PaleogeneMatrix <- abundanceMatrix(EarlyPaleogene, SampleDefinition="unit_name", TaxonRank="genus")
+PermianMatrix <- cullMatrix(PermianMatrix, 2, 10)
+TriassicMatrix <- cullMatrix(TriassicMatrix, 2, 10)
+CretaceousMatrix <- cullMatrix(CretaceousMatrix, 2, 10)
+PaleogeneMatrix <- cullMatrix(PaleogeneMatrix, 2, 10)
+```
+
+2)
+```R
+
+```
