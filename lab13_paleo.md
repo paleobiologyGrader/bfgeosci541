@@ -144,3 +144,22 @@ beta(PaleogeneMatrix)/gamma(PaleogeneMatrix)
 4) When not measured as a percentage, alpha diversity decreases across both extinction boundaries.
 
 5) When measured as a percentage, alpha diversity increases across the End Permian extinction, but still shows a decrease in the Late Cretaceous extinction event.
+
+##Problem set three
+1)
+```R
+LateOrdovician <- downloadPBDB("Animalia", "Sandbian", "Hirnantian")
+EarlySilurian <- downloadPBDB("Animalia", "Llandovery", "Wenlock")
+LateOrdovician <- cleanRank(LateOrdovician, "genus")
+EarlySilurian <- cleanRank(EarlySilurian, "genus")
+LateOrdovician <- constrainAges(LateOrdovician, Epochs)
+EarlySilurian <- constrainAges(EarlySilurian, Epochs)
+LateOrdovician <- macrostratMatch(LateOrdovician)
+EarlySilurian <- macrostratMatch(EarlySilurian)
+OrdovicianMatrix <- abundanceMatrix(LateOrdovician, SampleDefinition="unit_name", TaxonRank="genus")
+SilurianMatrix <- abundanceMatrix(EarlySilurian, SampleDefinition="unit_name", TaxonRank="genus")
+PermianMatrix <- abundanceMatrix(LatePermian, SampleDefinition="unit_name", TaxonRank="genus")
+TriassicMatrix <- abundanceMatrix(EarlyTriassic, SampleDefinition="unit_name", TaxonRank="genus")
+CretaceousMatrix <- abundanceMatrix(LateCretaceous, SampleDefinition="unit_name", TaxonRank="genus")
+PaleogeneMatrix <- abundanceMatrix(EarlyPaleogene, SampleDefinition="unit_name", TaxonRank="genus")
+```
