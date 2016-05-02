@@ -163,3 +163,22 @@ TriassicMatrix <- abundanceMatrix(EarlyTriassic, SampleDefinition="unit_name", T
 CretaceousMatrix <- abundanceMatrix(LateCretaceous, SampleDefinition="unit_name", TaxonRank="genus")
 PaleogeneMatrix <- abundanceMatrix(EarlyPaleogene, SampleDefinition="unit_name", TaxonRank="genus")
 ```
+
+2) 
+Gamma
+```R
+exp(diversity(colSums(PermianMatrix), index="shannon", base=exp(1)))
+[1] 210.0769
+```
+Alpha
+```R
+mean(diversity(PermianMatrix, index="shannon", base=exp(1)))
+[1] 2.232009
+```
+Beta
+```R
+diversity(colSums(PermianMatrix), index="shannon", base=exp(1))-mean(diversity(PermianMatrix), index="shannon", base=exp(1))
+[1] 3.115464
+```
+
+3)
