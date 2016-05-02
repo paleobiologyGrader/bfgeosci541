@@ -83,10 +83,10 @@ LatePermian <- macrostratMatch(LatePermian)
 EarlyTriassic <- macrostratMatch(EarlyTriassic)
 LateCretaceous <- macrostratMatch(LateCretaceous)
 EarlyPaleogene <- macrostratMatch(EarlyPaleogene)
-PermianMatrix <- abundanceMatrix(LatePermian, SampleDefinition="unit_name", TaxonRank="genus")
-TriassicMatrix <- abundanceMatrix(EarlyTriassic, SampleDefinition="unit_name", TaxonRank="genus")
-CretaceousMatrix <- abundanceMatrix(LateCretaceous, SampleDefinition="unit_name", TaxonRank="genus")
-PaleogeneMatrix <- abundanceMatrix(EarlyPaleogene, SampleDefinition="unit_name", TaxonRank="genus")
+PermianMatrix <- presenceMatrix(LatePermian, SampleDefinition="unit_name", TaxonRank="genus")
+TriassicMatrix <- presenceMatrix(EarlyTriassic, SampleDefinition="unit_name", TaxonRank="genus")
+CretaceousMatrix <- presenceMatrix(LateCretaceous, SampleDefinition="unit_name", TaxonRank="genus")
+PaleogeneMatrix <- presenceMatrix(EarlyPaleogene, SampleDefinition="unit_name", TaxonRank="genus")
 PermianMatrix <- cullMatrix(PermianMatrix, 2, 10)
 TriassicMatrix <- cullMatrix(TriassicMatrix, 2, 10)
 CretaceousMatrix <- cullMatrix(CretaceousMatrix, 2, 10)
@@ -95,5 +95,52 @@ PaleogeneMatrix <- cullMatrix(PaleogeneMatrix, 2, 10)
 
 2)
 ```R
-
+traditionalAlpha(PermianMatrix)
+[1] 57.63636
+traditionalAlpha(TriassicMatrix)
+[1] 35.15385
+traditionalAlpha(CretaceousMatrix)
+[1] 57.96875
+traditionalAlpha(PaleogeneMatrix)
+[1] 52.85
+beta(PermianMatrix)
+[1] 253.3636
+beta(TriassicMatrix)
+[1] 122.8462
+beta(CretaceousMatrix)
+[1] 717.0312
+beta(PaleogeneMatrix)
+[1] 978.15
+gamma(PermianMatrix)
+[1] 311
+gamma(TriassicMatrix)
+[1] 158
+gamma(CretaceousMatrix)
+[1] 775
+gamma(PaleogeneMatrix)
+[1] 1031
 ```
+
+3)
+```R
+traditionalAlpha(PermianMatrix)/gamma(PermianMatrix)
+[1] 0.1853259
+traditionalAlpha(TriassicMatrix)/gamma(TriassicMatrix)
+[1] 0.2224927
+traditionalAlpha(CretaceousMatrix)/gamma(CretaceousMatrix)
+[1] 0.07479839
+traditionalAlpha(PaleogeneMatrix)/gamma(PaleogeneMatrix)
+[1] 0.05126091
+beta(PermianMatrix)/gamma(PermianMatrix)
+[1] 0.8146741
+beta(TriassicMatrix)/gamma(TriassicMatrix)
+[1] 0.7775073
+beta(CretaceousMatrix)/gamma(CretaceousMatrix)
+[1] 0.9252016
+beta(PaleogeneMatrix)/gamma(PaleogeneMatrix)
+[1] 0.9487391
+```
+
+4) When not measured as a percentage, alpha diversity decreases across both extinction boundaries.
+
+5) When measured as a percentage, alpha diversity increases across the End Permian extinction, but still shows a decrease in the Late Cretaceous extinction event.
