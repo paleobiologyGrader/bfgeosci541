@@ -2,6 +2,8 @@
 ###Manabu Sakamoto, Michael J. Benton, and Chris Venditti
 #####Written by Bryce Fenlon
 
+> 9/10
+
 ##Summary
 The Cretaceous-Paleogene (K-Pg) extinction event that occurred 66 million years ago traditionally marks the end of the nonavian dinosaurs. In this study, Sakamoto and others investigated the hypothesis that dinosaurs were actually in a slow decline leading up to the K-Pg. These two contrasting views - sudden or slow - have been hotly contested for a long time due to the pervasive use of nonphylogenetic, time-binned data. Further, previous studies have failed, for the most part, to study speciation and extinction rates. Here the researchers take into account past statistical inconsistencies and use a generalized linear mixed model (GLMM) approach in a Bayesian framework to analyze the phylogenies of Ornithischia, Sauropodomorpha, and Theropoda. In essence, a GLMM is an extension of logistic regression that accounts for both fixed and random effects. By using it in a Bayesian framework, the researchers allow for the use of prior and posterior distributions for both of these effects when inferring probabilities. A similar but more widely used type would be an ARMA (autoregressive moving average) model used for time series analysis. Putting all of this together and using it on phylogenies means that temporal and phylogenetic nonindependence can be taken into account, something that past studies have failed to do. It also follows that speciation and extinction dynamics play an integral role in this type of statistical modeling. 
 
@@ -10,8 +12,11 @@ The results that the researchers produced were consistent across all three phylo
 ##Things you liked
 For a good chunk of my life dinosaurs were some abstract concept. It took quite a long time for the realization to hit me that there were once 40 tonne creatures roaming the Earth. However, it was not until this semester that I realized their unquestionable utility for investigating geologic scale patterns of clade dynamics. Admittedly they are not as useful as marine invertebrates simply because of their numbers, what's cooler than a Tyrannosaurus? Probably the fact that it's basically a big carnivorous turkey.
 
+> I'm not sure what any of that had to do with the paper?
+
 ##Things you did not like
 The incorporation of a covariate (i.e. sea level) was only discussed towards the end of the paper. In this case however I would have expected the researchers to begin looking at possible causal mechanisms earlier, perhaps in their introduction. The other thing that was a little off was that they only mentioned their statistical methods in passing within the body of the paper. Because one of the cornerstones of the reasoning for writing this paper was previous inadequacy in statistical analysis, I was expecting a more in depth review of it incorporated into the text. 
+
 
 ##Evaluation of figures
 The initial graph shown in this article was an overview of the various phylogenetic speciation model types: linear, asymptotic, and quadratic. These depend on clade or species dynamics. The second figure is composed of two graphs. The first being a comparison of linear to quadratic log node count models. The other shows how closely the three different subclades (excluding Ceratopsidae and Hadrosauriformes) are represented by the quadratic model of log node count. Lastly, the third figure consists of a color gradated phylogeny to graphically show how clade speciation rates passed from positive to negative throughout the Cretaceous. It also includes a graph comparing net speciation per million years to time elapsed. The result is a logistic curve highlighting - even more than the phylogeny - the downturns in speciation amongst the major clades. 
