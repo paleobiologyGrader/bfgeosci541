@@ -2,6 +2,8 @@
 ###By Bambach, R.K., Knoll, A.H., and Wang, S.C. (2004)
 #####Written by Bryce Fenlon
 
+> 9/10
+
 ##Summary
 This article was an investigation into whether or not mass extinctions that are often referred to as the “big five” are indeed separate in cause, effect, and magnitude from underlying background extinctions. These five intervals – the late Frasnian, end Triassic, end Ordovician, end Permian, and end Cretaceous – are better regarded as simply mass depletions (>13.5% generic loss) of diversity than a distinct class of events. Of those big five, the researchers concluded that three of them – the end Ordovician, end Permian, and end Cretaceous – could, in fact, be considered as separate in cause, magnitude, and effect. They relied mainly on outside sources for proving distinctions in cause and effect, and focused on analyzing magnitude throughout the majority of the paper. It should be noted that in the other two the depletions of biodiversity resulted from reduced rates of origination, and not elevated extinction levels like the others.
 
@@ -13,6 +15,8 @@ They did not discount other events such as those in the Botomian or Middle Cambr
 
 ##Things you did not like
 While I enjoyed the thorough nature of the article, more effort could have been put into making the flow better. For example, they mention continuity of cause and effect early on in the paper, but it was only on the 17th page that they finally got around to discussing it. I feel it could have better served its not insignificant purpose by being put before the methodology and analysis of the continuity of magnitude.
+
+> Stylistic complaints are the least interesting!
 
 ##Evaluation of figures
 Within the nine labeled figures of this article are 17 graphs and two tables. For the most part, the graphs are all variations on the same theme of diversity. They go about it differently each time - whether by proportions of genera or total number of genera - and over different intervals of time. The four that aberrate from this pattern are the two extinction intensity distributions and the two graphs dealing with the lowess curve and time-adjusted histogram of extinction rate. The first table looks at six intervals and their corresponding actual and proportional biodiversity change. The second compares actual data to two different models (effect of origination vs extinction) for each of the "big five" intervals in their larger segments of time. 
