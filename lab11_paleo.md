@@ -1,3 +1,5 @@
+> 20/20
+
 #Triassic and Jurassic Macrostratigraphy
 ##Part one
 ###Problem set one
@@ -116,5 +118,6 @@ LoAnimal <- downloadPBDB("Animalia", StartInterval="Lopingian", StopInterval="Lo
 points(LoAnimal$lng, LoAnimal$lat, pch=20)
 ```
 
-6) While there was a drop between the Lopingian and the Induan-Anisian in the amount of sedimentary units, the Induan-Anisian map shows a large increase in the percentage of sedimentary units with reported fossils in them. Drawing my conclusion purely from the maps that were created, I see sufficient evidence to reject the hypothesis that lower diversity in the Early Triassic is an artefact of poor sampling. I do not see evidence to support a claim about lower rock availability. 
+6) While there was a drop between the Lopingian and the Induan-Anisian in the amount of sedimentary units, the Induan-Anisian map shows a large increase in the percentage of sedimentary units with reported fossils in them. Drawing my conclusion purely from the maps that were created, I see sufficient evidence to reject the hypothesis that lower diversity in the Early Triassic is an artefact of poor sampling. I do not see evidence to support a claim about lower rock availability.
 
+> I think maybe you got the maps backwards.
