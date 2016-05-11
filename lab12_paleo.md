@@ -1,3 +1,5 @@
+> 20/20 and EC
+
 #Selectivity patterns of mass extinctions
 ##Problem set one
 1)
